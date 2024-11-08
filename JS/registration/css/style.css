@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{}
+#content {margin:auto;background:url(../images/bg1.jpg) repeat; height:800px; width:600px;}
+#content .regi{padding:50px;}
+#content .textbox{margin-bottom:40px;}
+
+

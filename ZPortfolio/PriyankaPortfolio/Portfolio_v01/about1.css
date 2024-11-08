@@ -1,0 +1,26 @@
+/*background*/
+/* Separate style sheet for background*/
+
+/*About*/
+.about{	position:relative; top:0px; left:80px;text-align:left;}
+ .about h1{position:relative; top:20px; color:#fff;}
+ /*.about h1#Qualifications{position:relative; top:20px; left:-200px; color:#fff;}*/
+.about ul{	margin-top:40px;  font-size:16px;}
+.about ul li{ position:relative; color:#fff; line-height:30px; color:orange; list-style-image:url("images/li_check_red.png")}
+.about ul li.c_red{list-style-image:url("images/li_check_red.png");list-style-type:black}
+.about ul li.c_blue{list-style-image:url("images/li_check_blue.png")}
+.about ul li.c_green{list-style-image:url("images/li_check_green.png")}
+.about ul li.c_pink{list-style-image:url("images/li_check_pink.png")}
+.about ul li.c_orange{list-style-image:url("images/li_check_orange.png")}
+.about ul li.c_grey{list-style-image:url("images/li_check_gray.png")}
+
+
+.about h1.c_red{ color:#db0448;}
+.about h1.c_blue{ color:#0d04f7;}
+.about h1.c_green{ color:#03a503;}
+.about h1.c_pink{ color:#ed0471;}
+.about h1.c_orange{color:#a32a01;}
+.about h1.c_grey{ color:#754231;}
+
+/*Footer*/
+

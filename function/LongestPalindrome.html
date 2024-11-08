@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+	/*function is_Palindrome(str1) {  
+var rev = str1.split("").reverse().join("");  
+return str1 == rev;  
+}  
+  
+function longest_palindrome(str1){  
+  
+var max_length = 0,  
+maxp = '';  
+  
+for(var i=0; i < str1.length; i++)   
+{  
+var subs = str1.substr(i, str1.length);  
+ 
+  for(var j=subs.length; j>=0; j--)   
+{  
+var sub_subs_str = subs.substr(0, j);  
+
+if (sub_subs_str.length <= 1)  
+continue;  
+  
+if (is_Palindrome(sub_subs_str))  
+{  
+if (sub_subs_str.length > max_length)   
+{  
+max_length = sub_subs_str.length;  
+maxp = sub_subs_str;  
+}  
+}  
+}  
+}  document.write(max_length); 
+  return maxp; 
+ document.write(max_length); 
+}  
+document.write(longest_palindrome("abracadabra"));  
+  
+//document.write(longest_palindrome("HYTBCABADEFGHABCDEDCBAGHTFYW12345678987654321ZWETYGDE"));*/
+		
+
+function is_palindrome(str1)
+{
+var rev=str1.split("").reverse().join("");
+return str1==rev;
+}
+
+
+function palindrome(str1)
+{
+	var max_count=0,
+	sp=" ";
+	for(var i=0; i<+str1.length;i++)
+		{
+			var subs=str1.substr(i,str1.length);
+	for(j=subs.length;j>=0;j--)
+		{
+		var sub_subs_sub=subs.substr(0,j);
+		if(sub_subs_sub.length<=1)
+		{
+			continue;
+		}
+		if(is_palindrome(sub_subs_sub))
+		{
+			if(sub_subs_sub.length>max_count)
+				{	max_count=sub_subs_sub.length;
+					sp=sub_subs_sub;
+				}
+		}
+		}
+		}
+			return sp;
+}
+	document.write(palindrome("abracadabra"))
+  
+	</script>
+	
+</head>
+<body>
+
+</body>
+</html>

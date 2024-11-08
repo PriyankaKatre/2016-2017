@@ -1,0 +1,116 @@
+body { margin:0px; padding-bottom:0px; background:  url(images/background.png); overflow-x:hidden; }
+body>img { position:relative; top:260px; }
+div { margin:0px; padding:0px; }
+#page { width:960px; margin:0 auto; position:absolute; top:0px; left:200px;}
+
+/* header logo*/
+#page>header { text-align:center; }
+#page>header>#logo>img { margin-top:3px; margin-bottom:0px;}
+
+/* All main Navigation menu*/
+#page>header>.logotext { margin-top:6px; font-family:Gill Sans MT;font-size:14pt; font-weight:bold; color:#666666;}
+/*#page>.indexnav>*/ul {  font-family:Helvetica; font-size:20pt; list-style-type:none; padding-left:0px; margin-left:43.5pt; margin-top:40px; }
+/*#page>.indexnav>*/ul>a { text-decoration:none; }
+/*#page>.indexnav>*/ul>a>li { display:inline-block;margin-right:40pt; color:#663333;}
+#page .active { background-color:#fff; padding:10px 30px 0px 30px;border-radius:25px 25px 0px 0px;}
+
+/* Index page main content*/
+.indexsection { background-color:#fff; height:558px;
+				background: -webkit-linear-gradient(#ccc); /* For Safari 5.1 to 6.0 */
+				background: -o-linear-gradient(#ccc); /* For Opera 11.1 to 12.0 */
+				background: -moz-linear-gradient(#ccc ); /* For Firefox 3.6 to 15 */
+				background: linear-gradient(#ccc); /* Standard syntax */ }
+section .content { background-color:#333366; height:360px; width:845px; margin:auto; position:relative; top:50px;
+				    background: -webkit-linear-gradient(#333366, #999999); /* For Safari 5.1 to 6.0 */
+				    background: -o-linear-gradient(#333366, #999999); /* For Opera 11.1 to 12.0 */
+				    background: -moz-linear-gradient(#333366, #999999); /* For Firefox 3.6 to 15 */
+				    background: linear-gradient(#333366, #999999); /* Standard syntax */
+				    border-width:4px 1px 0px 1px; border-style:solid; border-color:#000;
+				    box-shadow:2px;
+				 }
+.indexsection .content h1 { font-family:Helvetica; font-size:100pt; margin-top:20px; text-align:center; color:#ccc; margin-bottom:0px;}
+.indexsection .content #intro { color:#ccc; font-family:[MyriadPro]; font-size:30pt; margin-top:21px; margin-left:31px; margin-bottom:0px;}
+.indexsection .content .work { margin-left:300px; margin-top:16px; padding:12px 35px; border-radius:25px; background-color:#663333; color:#fff; font-family:[MyriadPro]; font-size:12pt;}
+.indexsection .content p { margin-top:44px; color:#ccc; margin-left:175px;}
+.indexsection .content p b {color:#333333;  }
+/*.indexsection .content*/ button { margin-left:350px; padding:10px; margin-top:20px; border-radius:20px; color:#999999; }
+section #index_page_last_img { margin-top:160px; }
+
+/*portfolio page*/
+
+body>img:nth-child(2) { position:relative; top:740px; }
+
+.portsection {  background-color:#fff; height:1150px;
+				background: -webkit-linear-gradient(#ccc); /* For Safari 5.1 to 6.0 */
+				background: -o-linear-gradient(#ccc); /* For Opera 11.1 to 12.0 */
+				background: -moz-linear-gradient(#ccc ); /* For Firefox 3.6 to 15 */
+				background: linear-gradient(#ccc); /* Standard syntax */ }
+.portsection ul { color:#999999; font-family:Lucida Sans; font-size:10pt; padding-top:33px;margin-left:62px;}
+.portsection ul a:first-child li { text-decoration:underline;}
+.portsection ul a li { margin-right:28px; }
+
+.project_01,.project_04,.project_07 { margin-left:58px;}
+.project_01,.project_02,.project_03 { display:inline-block; width:286px; margin-top:18px; }
+.project h4 { font-family:Helvetica}
+.project p { font-family:Lucida Sans; font-size:10pt; color:#666666}
+span { font-family:Lucida Sans; font-size:10pt; color:#666666}
+.project a span { text-decoration:underline; margin-top:24px;}
+
+.project_04,.project_05,.project_06 { display:inline-block; width:286px; margin-top:40px; }
+.project_07,.project_08,.project_09 { display:inline-block; width:286px; margin-top:40px; }
+section #port_page_last_img img{ margin-top:10px; padding-bottom:0px; }
+
+
+/*What I do Page Css*/
+
+body>img:nth-child(3) { position:relative; top:1720px; }
+.whatidosection { background-color:#fff; height:790px;
+				background: -webkit-linear-gradient(#ccc); /* For Safari 5.1 to 6.0 */
+				background: -o-linear-gradient(#ccc); /* For Opera 11.1 to 12.0 */
+				background: -moz-linear-gradient(#ccc ); /* For Firefox 3.6 to 15 */
+				background: linear-gradient(#ccc); /* Standard syntax */ }
+
+.whatidosection>h1 { padding-top:58px; padding-left:81px; font-family:Gill Sans MT; font-size:43pt; color:#663333;
+			  		 margin-bottom:0px;}
+.whatidosection>h2 { padding-left:78px; color:#663333; font-family:Gill Sans MT; font-size:28pt; margin-top:0px;
+					 margin-bottom:0px;}
+.whatidosection>span { margin-top:40px; padding-left:78px; font-family:Gill Sans MT; font-size:52pt; color:#999999;}
+.whatidosection>p { display:inline-block; width:450px; margin-left:30px; margin-top:52px; font-family:Georgia;
+					color:#999999;font-size:11pt;}
+.whatidocontent .left,.middle,.right { font-family:helvetica; margin-left:71px; display:inline-block; width:200px; margin-top:40px; color:#999999;}
+.whatidocontent .left h4,.middle h4,.right h4 {  font-size:18pt; color:#000000;  }
+#whatido_page_last_img { margin-top:0px; padding-bottom:0px; }
+
+
+/*Contact Me Page*/
+
+body>img:nth-child(4) { top:2370px; }
+.contactmesection {background-color:#fff;
+				background: -webkit-linear-gradient(#ccc); /* For Safari 5.1 to 6.0 */
+				background: -o-linear-gradient(#ccc); /* For Opera 11.1 to 12.0 */
+				background: -moz-linear-gradient(#ccc ); /* For Firefox 3.6 to 15 */
+				background: linear-gradient(#ccc); /* Standard syntax */ }
+
+.contactmesection .contactleft,.contactright { display:inline-block;  }
+
+.contactmesection .contactleft { margin-left:58px; margin-top:6px;width:470px; }
+
+.contactmesection .contactleft h1,h2 { font-family:Gill Sans MT; font-size:50pt; margin-bottom:0px; color:#663333;}
+
+.contactmesection .contactleft h2 { font-size:25pt; margin-top:0px;}
+
+.contactmesection .contactleft form input:first-child { margin-top:26px;}
+
+.contactmesection .contactleft form input,textarea { display:block;  padding:10px; width:350px;
+													 border:2px solid #fff; border-radius:20px; background-color:#ccc;
+													 margin-bottom:16px; font-family:Lucida Sans; color:#999999; }
+
+.contactmesection .contactleft button { margin-left:110px; border-top:2px solid #330000; border-left:2px solid #330000; 									border-right:2px solid #330000; width:180px; background-color:#663333; 												font-family:Gill Sans MT; font-size:15pt; color:#fff;}
+.contactmesection .contactright { width:365px; }
+.contactright img { margin-top:-30px; margin-left:85px; }
+.contactright p {display:block margin-left:60px; margin-top:40px; font-family:Lucida Sans; font-size:12pt; color:#ccc;}
+.contactright a { display:inline-block; }
+.contactright a img:first-child { margin-left:20px; margin-top:20px; }
+.contactright span img { display:block; margin-left:250px; margin-top:38px; }
+.contactright>p, span{ margin-top:18px; font-family:Lucida Sans; font-size:10pt; margin-right:5px; color:#666666; }
+.contactright>span { margin-left:126px; }

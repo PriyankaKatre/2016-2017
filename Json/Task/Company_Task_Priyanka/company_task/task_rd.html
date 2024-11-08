@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Currency Solution Management System</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/task_v02.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular.min.js"></script>
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="container">
+				<div class="whole_app clearfix col-md-10 col-md-offset-1 col-sm-12"
+					ng-app = "myApp" ng-controller = "mainController">
+					<div class="main_content clearfix">
+						<div class="left clearfix col-sm-9">
+							<div class="company_personal clearfix">
+								<p class="text_gray">Corporate account</p>
+								<h2><strong class="companyName"></strong></h2>
+								<div class="col-sm-6">
+									<div class="phone"></div>
+									<div class="ref">SC122323XE</div>
+									<div class="NP">NP:$<span class="net_position"></span></div>
+								</div>
+								<div class="col-sm-6">
+									<p class="text_gray">Main Contact <i class="fa fa-user"></i></p>
+									<p><strong class="main_contact_name"></strong></p>
+									<p class="main_contact_position"></p>
+								</div>
+							</div>
+							<div class="dealer_details clearfix">
+								<div class="col-md-3 col-sm-6">
+									<p class="text_gray">Dealer</p>
+									<p class="dealer_name"></p>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<p class="text_gray">Last Login</p>
+									<p><span class="last_login_time"></span><br/><span class="contact"></span></p>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<p class="text_gray">Last Call</p>
+									<p class="last_call_time"></p>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<p class="text_gray">Dealer</p>
+									<p class="Dealer_right_name"></p>
+								</div>
+							</div>
+							<div class="last_notes clearfix">
+								<p class="text_gray">Last Notes <i class="fa fa-commenting-o"></i></p>
+								<p class="notes"></p>
+							</div>
+						</div>
+						<div class="right col-sm-3">
+							<p class="text_gray">Active Trade</p>
+							<h4><strong class="id"></strong></h4>
+							<div class="buy_sell">
+								<p>
+									<span class="text_gray">Buy</span>
+									<span class="pull-right">
+										<span class="buy_amount"></span>
+										<span class="buy_currency"></span>
+									</span>
+								</p>
+								<p class="sell">
+									<span class="text_gray">Sell</span>
+									<span class="pull-right">
+										<span class="sell_amount"></span>
+										<span class="sell_currency"></span>
+									</span>
+								</p>
+								<p>
+									<span class="text_gray">Margin</span>
+									<span class="pull-right margin_percent"></span>
+								</p>
+								<div class="dealer">
+									<div class="text_gray">Dealer</div>
+									<div class="Dealer_right_name"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer clearfix">
+						<button class="btn btn-success col-sm-2 col-xs-12 pull-left">ACCEPT</button>
+						<button class="btn btn-info col-sm-2 col-xs-12 pull-left">TRANSFER</button>
+						<button class="btn btn-danger col-sm-2 col-xs-12 pull-right">DECLINE</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="task.js"></script>
+		<script>
+			var app = angular.module('myApp', []);
+			app.controller('mainController', function($scope, $http) {
+				$http.get("json/fulldata.json").then(function(response) {
+					$scope.appData = response.data;
+					console.log($scope.appData);
+				});
+			});
+		</script>
+	</body>
+</html>

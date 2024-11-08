@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+var arr1 =new Array(3);
+for (var i=0; i<3; i++)
+{
+	arr1[i]=new Array(3);
+}
+var start=1;
+for(var i=0; i<3; i++)
+{
+	for(var j=0;j<3;j++)
+	{
+		arr1[i][j]=start;
+		start++;
+	}
+}
+for(var i=0 ;i<3; i++)
+{
+	for(var j=0;j<3;j++)
+	{
+	document.write(arr1[i][j]+"&emsp;");
+	}
+	document.write("<br/>");
+}
+document.write("<br/>");
+document.write("&emsp;"+"+");
+document.write("<br/>");
+document.write("<br/>");
+
+var arr2=new Array(3);
+for(i=0;i<3;i++)
+{
+arr2[i]=new Array(3);
+}
+for(var i=0; i<3; i++)
+{
+	for(var j=0;j<3;j++)
+	{
+		start--;
+		arr2[i][j]=start;
+		
+	}
+}
+for(var i=0 ;i<3; i++)
+{
+	for(var j=0;j<3;j++)
+	{
+	document.write(arr2[i][j]+"&emsp;");
+	}
+	document.write("<br/>");
+}
+document.write("<br/>");
+document.write("&emsp;"+"+");
+document.write("<br/>");
+document.write("<br/>");
+var arr3=new Array(3);
+for(i=0;i<3;i++)
+{
+arr3[i]=new Array(3);
+}
+for(var i=0; i<3; i++)
+{
+	for(var j=0;j<3;j++)
+	{
+	
+		arr3[i][j]=arr1[i][j]+arr2[i][j]
+		
+	}
+}
+for(var i=0 ;i<3; i++)
+{
+	for(var j=0;j<3;j++)
+	{
+	document.write(arr3[i][j]+"&emsp;");
+	}
+	document.write("<br/>");
+}
+
+</script>
+</head>
+
+<body>
+</body>
+</html>

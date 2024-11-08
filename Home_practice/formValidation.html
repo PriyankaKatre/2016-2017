@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+		<script>
+		function addNumber()
+		{
+			var first=parseInt(document.getElementById("firstNumber").value);
+			if(first=="")
+			{
+				alert("please enter a 1 valid number");
+				return;
+			}
+
+			if(isNaN(first))
+			{
+				alert("Please enter first number");
+				return;
+			}
+			
+
+			var second=document.getElementById("secondNumber").value;
+			
+			if(second=="")
+			{
+				alert("please enter a 2 valid number");
+				return;
+			}
+
+			if(isNaN(second))
+			{
+				alert("Please enter second number");
+				return;
+			}
+			second=parseInt(second);
+			document.getElementById("result").value=first + second;
+		}
+
+	</script>
+
+
+</head>
+<body>
+<form>
+	FirstNumber:<input type="text" id="firstNumber"><br/>
+	SecondNumber:<input type="text" id="secondNumber"><br/>
+	Result:<input type="text"  id="result"><br/>
+	<input type="Button" value="Submit" onclick="addNumber()">
+
+
+	</form>
+</body>
+</html>

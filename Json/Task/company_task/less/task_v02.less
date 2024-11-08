@@ -1,0 +1,134 @@
+.container-fluid {
+	background-color:#ccc;
+}
+.whole_app {
+	padding:0px !important;
+	background-color:#fff;
+	border-radius: 50px 50px 0px 0px;
+	.header {
+			background: #efefef;
+			padding:10px;
+
+				padding-left:80px;
+				li {
+
+					font-size:50px;
+				}
+				li {
+					&:first-child {
+
+						list-style-type:none;
+						font-size:20px;
+					}
+					&:nth-child(2) {
+							width:10px;
+						color:red !important;
+					}
+					&:nth-child(3) {
+						width:10px;
+						color:yellow !important;
+					}
+					&:last-child {
+						width:10px;
+						color:green !important;
+					}
+				}
+	}
+	p {
+		margin: 0;
+	}
+	h2 {
+		margin-top: 0;
+	}
+	.text_gray {
+		color: #9b9b9b;
+	}
+	.main_content {
+		padding: 0px 30px;
+			.left {
+			border-right: 2px dotted #d8d8d8;
+			.company_personal {
+				.text_gray {
+					margin-top:23px;
+					font-size:14pt
+				}
+				h2 {
+					margin-top:13px;
+				}
+				.col-sm-6 {
+					padding: 0;
+					font-size:14pt;
+					&:last-child {
+						padding-left: 30px;
+						border-left: 1px solid #d8d8d8;
+					}
+					.phone {
+						margin-top:30px;
+					}
+					.ref {
+						margin-top:15px;
+						span{
+							color:#6699ff;
+							border-bottom:1px solid;
+						}
+					}
+					.NP {
+						margin-top:10px;
+					}
+					p {
+						&:nth-child(2) {
+						margin-top:15px;
+						}
+						&:last-child {
+						font-size:13pt;
+						}
+					}
+				}
+			}
+			.dealer_details {
+				border-top: 1px solid #d8d8d8;
+				border-bottom: 1px solid #d8d8d8;
+				margin: 10px 0;
+				padding: 20px 0;
+				font-size:14pt;
+				.text_gray {
+					margin-top:30px;
+				}
+			}
+			.last_notes {
+				padding: 30px 0;
+				font-size: 14pt;
+			}
+		}
+		.right {
+			font-size:14pt;
+			.text_gray {
+				margin-top: 23px;
+			}
+			.buy_sell {
+				margin-top:50px;
+				p {
+					padding: 10px 0;
+				}
+				.sell {
+					border-top: 1px solid #d8d8d8;
+					border-bottom: 1px solid #d8d8d8;
+				}
+				.dealer {
+					margin-top: 60px;
+				}
+			}
+		}
+	}
+	.footer {
+		background-color: #efefef;
+		padding: 10px 30px;
+		border-radius: 0 0 5px 5px;
+		.btn {
+			font-size:14pt;
+		}
+		.btn-success {
+			margin-right: 10px;
+		}
+	}
+}

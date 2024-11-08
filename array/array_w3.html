@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+/*var array = [1, 2, 3, 4, 5, 6],
+    s = 0,
+    p = 1,
+    i;
+for (i = 0; i < array.length; i++) 
+   {
+    s += array[i];
+    p *= array[i];
+    }
+
+document.write('Sum : '+s + ' Product :  ' +p);*/ 
+
+
+
+var sqr=function(array)
+{
+	var sum=0
+	for(var i=0; i<array.length;i++)
+	{
+		sum+=Math.pow(array[i], 2);
+	}
+	return sum;
+}
+
+document.write(sqr([1,2,3]));
+
+/*var num=window.prompt();  
+var str = num.toString();  
+var result = [str[0]];  
+    
+for(var x=1; x<str.length; x++)  
+  {  
+    if((str[x-1]%2 === 0)&&(str[x]%2 === 0))  
+     {  
+      result.push('-', str[x]);  
+     }  
+    else  
+     {  
+      result.push(str[x]);  
+     }  
+  }  
+document.write(result.join('')); */ 
+
+		/*is_array = function(input) {  
+  if (toString.call(input) === "[object Array]")  
+    return true;  
+  return false;     
+    };  
+document.write(is_array('w3resource'));  
+document.write("<br>"); 
+document.write(is_array([1, 2, 4, 0])); */
+
+/*var array_Clone = function(arra1) {  
+ return arra1 
+    };  
+document.write(array_Clone([1, 2, 4, 0]));  
+document.write(array_Clone([1, 2, [4, 0]])); */
+/*last = function(array, n)
+{
+if(array==null)
+return void 0;
+if(n==null)
+return array[array.length-1];
+return array.slice(Math.max(array.length-n,0));
+}
+document.write(last([7, 9, 0, -2]));
+document.write("<br>");  
+document.write(last([7, 9, 0, -2],3)); document.write("<br>"); 
+document.write(last([7, 9, 0, -2],6)); */
+
+   
+/*last =  function(array, n) {  
+  if (array == null)   
+    return void 0;  
+  if (n == null)   
+     return array[array.length - 1];  
+  return array.slice(Math.max(array.length - n, 0));    
+  };  
+  
+document.write(last([7, 9, 0, -2]));
+document.write("<br>");  
+document.write(last([7, 9, 0, -2],3)); document.write("<br>"); 
+document.write(last([7, 9, 0, -2],6)); */ 
+
+/*first =  function(array, n) {  
+      if (array == null)   
+      return [];  
+    if (n == null)   
+      return array[0];  
+    if (n < 0)  
+      return [];  
+    return array.slice(0, 3);  
+  };  
+  
+document.write(first([7, 9, 0, -2]));
+document.write("<br>");  
+document.write(first([],3));
+document.write("<br>");  
+document.write(first([7, 9, 0, -2],3));
+document.write("<br>");  
+document.write(first([7, 9, 0, -2],6));
+document.write("<br>");  
+document.write(first([7, 9, 0, -2],-3));*/   
+</script>
+</head>
+<body>
+
+</body>
+</html>

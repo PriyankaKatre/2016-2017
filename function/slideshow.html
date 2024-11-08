@@ -1,0 +1,35 @@
+<html>
+	<head>
+
+	</head>
+	<body>
+		<img src="images/1.png" alt="" id="image" onclick="slideStop()">
+		<button >Start slide show</button>
+		<button >Stop slide show</button>
+
+	<script>
+
+	function changeImage(){
+	var images=document.getElementById("image").getAttribute("src");
+	var currentImage=images.substring(images.indexOf("/")+1,images.indexOf("."));
+	//console.log(currentImage);
+	if(currentImage==3)
+	{currentImage=0;}
+	var newImage="images/"+(Number(currentImage)+1)+".png";
+
+	document.getElementById("image").setAttribute("src",newImage)
+
+}
+function slideShow(){
+		 slideShow=setInterval(changeImage,500)
+	}
+	function slideStop(){
+		clearInterval(slideShow)
+	}
+	slideShow();
+
+
+
+	</script>
+	</body>
+</html>

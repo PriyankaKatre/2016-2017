@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+ © Rajesh Patkar Institute Of Software Engineering.
+   Codeparatus by Rajesh Patkar. 
+-->
+
+<html>
+    <head>
+        <title>Stack With Constructor </title>
+    </head>
+    <body>
+        
+        <div>Stack using Constructor</div>
+        
+        <script>
+            
+            function push(v) {
+                if (this.st === 0) {
+                    console.log("Stack Overflow");
+                }
+                else {
+                    this.st = this.st - 1;
+                    this.stk[this.st] = v;
+                }
+            }
+            
+            function pop() {
+                if (this.st === 10) {
+                    console.log("Stack Underflow");
+                }
+                else {
+                    var temp = this.stk[this.st];
+                    this.st = this.st + 1;
+                    return temp;
+                }
+            }
+            
+            function print() {
+                console.log("Printing Stack");
+                for (var i = this.st ; i < 10; i++) {
+                    console.log(this.stk[i]);
+                }
+            };
+
+            
+            function MyStack() {
+                this.st = 10;
+                this.stk = new Array(10);
+                this.push = push;
+                this.pop = pop;
+                this.print = print;
+            }
+            
+            var s1 = new MyStack();
+            s1.push(10);
+            s1.push(20);
+            s1.push(30);
+            s1.print();
+
+            var s2 = new MyStack();
+            s2.push(22);
+            s2.push(33);
+            s2.push(44);
+            s2.print();
+            var v = s2.pop();
+
+            console.log("Last Value popped in s2 is " + v);
+            s2.print();
+           
+        </script>
+        
+    </body>
+</html>

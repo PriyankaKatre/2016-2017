@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script type="text/javascript">
+
+/* Anoynmus function: Function without name and used sa object variable
+
+		var f1 =function()
+		{
+			var a=0;
+			for(i=0;i<arguments.length;i++)
+			{
+				a+=arguments[i];
+			}
+			alert("sum =" + a);
+		}
+
+
+			var f2=function(a, b)
+			{
+				return (a-b);
+			}
+
+
+		/*self invocking function*/	
+	(function()
+	{
+		alert("This is self invocking function")
+	})();				
+	</script>
+
+
+</head>
+<body>
+
+<input type="button" value="show sum" onclick="f1(10,20,50,60,70);">
+<input type="button" value="show difference" onclick="alert('difference ='+ f2(10,20));">
+</body>
+</html>

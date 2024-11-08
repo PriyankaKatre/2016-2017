@@ -1,0 +1,46 @@
+<html>
+	<head>
+	<script>
+		var arr1=[];
+		function addElement(){
+		var arrLength=arr1.length;
+		arr1[arrLength]=document.getElementById("textInput").value;
+		var n=arr1.length;
+			document.getElementById("itemCount").innerHTML="No. of items added"+n.toString();
+			var listdiv=document.getElementById("list");
+				while(listdiv.hasChildNodes()){
+				listdiv.removeChild(listdiv.lastChild);
+		}
+		/*function result(){
+			var n=arr1.length;
+			document.getElementById("itemCount").innerHTML="No. of items added"+n.toString();
+			var listdiv=document.getElementById("list");
+			while(listdiv.hasChildNodes()){
+				listdiv.removeChild(listdiv.lastChild);
+			}*/
+		for(var i=0; i<n; i++)
+		{
+			var newDiv=document.createElement("div");
+			newDiv.innerHTML="Item"+(i+1).toString()+"of"+n.toString()+"is"+arr1[i];
+			listdiv.appendChild(newDiv);
+		}
+		console.log(arr1.length)
+		}
+
+	</script>
+
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td>Enter any value</td>
+				<td><input type="text" id="textInput" ></td>
+			</tr>
+			<tr>
+				<td><input type="Button" id="button" value="add value" onclick="addElement()"></td>
+			</tr>
+		</table>
+		<div id="itemCount"></div>
+		<div id="list">	</div>
+	</body>
+</html>

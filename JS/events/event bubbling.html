@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Event Bubble and Phases</title>
+        <script>
+            function f1() {
+                console.log("f1");
+                console.log("Current Element " + event.currentTarget.id);
+                console.log("Target "+event.target.id);
+                console.log("Event Phase "+event.eventPhase);
+                console.log("Bubble Status "+event.bubbles);
+                console.log("Cancelable Status "+event.cancelable);
+            }
+            function f2() {
+                console.log("f2");
+                console.log("Current Element " + event.currentTarget.id);
+                console.log("Target "+event.target.id);
+                console.log("Event Phase "+event.eventPhase);
+                console.log("Bubble Status "+event.bubbles);
+                console.log("Cancelable Status "+event.cancelable);
+            }
+            function f3() {
+                console.log("f3");
+                console.log("Current Element " + event.currentTarget.id);
+                console.log("Target "+event.target.id);
+                console.log("Event Phase "+event.eventPhase);
+                console.log("Bubble Status "+event.bubbles);
+                console.log("Cancelable Status "+event.cancelable);
+            }
+            function f4() {
+                console.log("f4");
+                console.log("Current Element " + event.currentTarget.id);
+                console.log("Target "+event.target.id);
+                console.log("Event Phase "+event.eventPhase);
+                console.log("Bubble Status "+event.bubbles);
+                console.log("Cancelable Status "+event.cancelable);
+            }
+        </script>
+    </head>
+    <body>
+        <div id="div1" onclick="f1()" style="background-color: brown; color: aliceblue;padding:20px">
+            This is div at level1
+            <div id="div2" onclick="f2()" style="background-color: burlywood;padding:20px">
+                This is div at level2
+                <p id="paragraph1" onclick="f3()" style="background-color: appworkspace;padding:20px">
+                    <button id="button1" onclick="f4()" style="background-color: beige;padding:20px">   
+                        Click 
+                    </button>
+                </p>
+            </div>
+        </div>    
+    </body>
+</html>

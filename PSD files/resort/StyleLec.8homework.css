@@ -1,0 +1,35 @@
+.Container{
+	width:960px;
+	height:766px;
+	margin:auto;
+	border:;
+}
+.Container .Header{
+	background-color: #007963;
+	width:960px;
+}
+.Container .Middle{
+	margin-top: 0PX;
+}
+.Container .Header .Logo{
+	margin-left: 10px;
+}
+.Container .Middle .Background{
+	position:relative;
+}
+.Container .Middle .Menu{
+	position:absolute;
+	top:110px;
+	right:200px;
+}
+.Container .Footer .Images{
+	position:absolute;
+	top:515px;
+	left:210px;
+}
+.Container .Footer .Text1{
+	position:absolute;
+	top:590px;
+	left:210px;
+}
+

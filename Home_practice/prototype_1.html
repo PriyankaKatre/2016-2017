@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+
+	getEmployeeDetail();
+function getEmployeeDetail()
+{
+		person.prototype.getname=function()
+	{
+		return this.name.toUpperCase();
+	}
+	var person1= new person();
+
+	person1.name="Ram";
+	var person2= new person();
+	person2.name="Sita";
+	document.write(person1.getname());
+	document.write("<br>");
+	document.write(person2.getname());
+}
+
+function person(name)
+{
+	this.name=name;
+	
+
+}	
+person.prototype.getname=function(){
+		return this.name;
+	}
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

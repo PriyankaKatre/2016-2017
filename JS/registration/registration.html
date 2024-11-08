@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Registration</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload="onLoad()">
+
+<div id="content">
+<div class="regi">
+
+<form id="myform" name="regform" >
+    <label>Firstname : </label> <input class="textbox" type="text"  id="box1"  /><br/>
+    
+    <label>Lastname : </label> <input class="textbox"type="text" id="box2" /><br/>
+    
+    <label>I was born on  : </label> <input class="textbox" type="text" id="box3" maxlength="2" size="2" placeholder="DD"/>
+	
+	<select id="month" > <option>January</option> <option>February</option> <option>March</option> <option>April</option> <option>May</option> <option>June</option>
+    		<option>July</option><option>August</option><option>September</option><option>October</option><option>November</option><option>December</option>
+    </select>
+
+    <input class="textbox" type="text" id="box4" maxlength="4" size="4" placeholder="YYYY" onblur="checkDate();" /><br/> <!-- DOB Ends-->
+    
+    <label id="gender">Gender : </label>  <label id="lbmale">Male<input class="textbox" type="radio" id="male" name="gender"  value="male"/></label>  <label>Female</label><input type="radio" id="female" name="gender" value="female"/><br/>
+    
+    <label>Mobile phone : </label>  <input class="textbox" type="text" id="box5"/><br/>
+    
+    <label>E-Mail : </label>  <input class="textbox" type="email" id="box6" required="required"/><br/>
+    
+    <label>Country : </label>  <select class="textbox" type="text" id="country"><option>India</option><option>USA</option><option selected="selected">UK</option><option>Canada</option><option>Australia</option> <option>Newzeland</option></select><br/>
+    
+      <label>Maritial Status  : </label> <input class="textbox" type="checkbox" id="mstatus1"/><label>Married </label>
+      
+      <input class="textboxq" type="checkbox" id="mstatus2"/> <label>Single</label><input class="textboxq" type="checkbox" id="mstatus3"/> <label>Divorced</label><br/>
+             
+       <input class="textbox" type="button" name="submit" id="submit" onclick="onSubmitChk()" value="SUBMIT"/>     
+             
+</form>
+
+</div>
+</div>
+<!--  java script coding -->
+
+<script type="text/javascript">
+
+function onLoad()
+{
+document.getElementById("box1").focus();
+ }
+
+function onSubmitChk()
+{
+var index;
+for(index=1;index<=6;index++)
+ {
+   
+   if(document.getElementById("box" + index).value=="" )
+      {
+          document.getElementById("box" + index).style.borderColor="red";
+		
+          document.getElementById("box1").focus();
+	 }
+	 else
+	 {
+         document.getElementById("box" + index).style.borderColor="blue";	 
+	 }
+	}<!--for loop closed-->
+	
+	 if(document.getElementById("male").checked==false && document.getElementById("male").checked==false)
+      {
+          document.getElementById("gender").style.color="red";
+		  
+	 } else
+	 {
+          document.getElementById("gender").style.color="black";
+	 }
+
+	 
+} <!--function onSubmitChk() closed-->
+
+function checkDate()
+{
+if(document.getElementById("box3").value=="" || document.getElementById("box4").value=="")
+{alert("Please input the date & year");}
+else {
+var d=document.getElementById("month").value;
+switch(d)
+{
+	case "January":
+	case "March":
+	case "May":
+	case "July":
+	case "August":
+	case "October":
+	case "December":
+	
+	var x=document.getElementById("box3").value;
+		if (x<1||x>31) {alert("no");break;}
+		
+	case "February":
+	
+			var t=document.getElementById("box4").value;
+			var y=document.getElementById("box3").value;
+			if(y<1||y>29)
+			 {
+			 alert ("wrong date");break;
+			 }
+			 else
+			  {
+				if(y==29)
+					{
+					if (t%4==0 && t%100==0 && t%400==0)
+						 {
+					 alert("leap year");break;
+						 }
+					  else
+						{ 
+					  alert("wrong date leap year");break;
+						}
+					}
+		
+			  }	
+					
+	case "April":
+	case "June":
+	case "September":
+	case "November":
+	
+				var x=document.getElementById("box3").value;
+       	if (x<1||x>30) {alert("nono");break;}
+
+    }
+
+}
+}
+</script>
+
+</body>
+</html>

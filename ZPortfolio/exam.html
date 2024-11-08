@@ -1,0 +1,193 @@
+<html>
+	<head>
+
+	</head>
+	<body>
+		<script>
+//exercise 1
+			/*(function(){
+
+				var summer =function (){
+					var sum=0;
+					var abc={
+						add:function(n){sum+=n;},
+						getCurrentSum: function(){return sum;}
+
+					}
+					return abc;
+				}
+				var s1=summer();
+				var s2=summer();
+				s1.add(20);
+				s2.add(30);
+				s2.add(5);
+
+				//prints 30
+				console.log(s1.getCurrentSum());
+				//prints 35
+				console.log(s2.getCurrentSum());
+			}());*/
+//exercise 2
+			/*(function(){
+				var person={
+					buy:function(){
+						console.log("I'm rich")
+					}
+				};
+				var car={
+					price:2000,
+					drive:function(){
+						console.log("vrum vrum");
+					}
+
+				};
+				// print vrum vrum
+				car.drive();
+				// print I'm rich
+				if(car.price>1000)
+				{
+					person.buy();
+				}
+			}());*/
+//exercise 3
+			/*(function(){
+				var employees=[{hello:function(){
+					console.log("I work AT IBM");
+				}}];
+				for(var i=0; i<employees.length; ++i)
+				{
+					//i work at IBM
+					employees[i].hello();
+				}
+			}());*/
+			//another way
+			/*var emp=function(){};
+			emp.prototype.hello=function(){
+				console.log("I work AT IBM");
+			};
+			var employees=[new emp(),new emp(),new emp()];
+			for(var i=0; i<employees.length; ++i)
+				{
+					//i work at IBM
+					employees[i].hello();
+				}*/
+//exercise 4
+
+/*(function() {
+
+    // Insert Code Here
+    var MusicBox = function() {
+        var self = {};
+        var albums = [];
+
+        self.addAlbum = function( a ) {
+            albums.push( a );
+        };
+
+        self.favoriteAlbum = function() {
+            return albums.reduce(function(a, b) {
+                return a.countPlays() > b.countPlays() ? a : b;
+            });
+        };
+
+
+        return self;
+
+    };
+
+    var Album = function(artist, title) {
+        var self = {};
+        var count = 0;
+
+        self.play = function() {
+            console.log("Playing " + self);
+            count += 1;
+        };
+
+        self.toString = function() {
+            return artist + " - " + title;
+        };
+
+        self.countPlays = function() {
+            return count;
+        };
+
+        return self;
+    };
+
+    var box = new MusicBox(),
+        a1 = new Album("The Who", "Tommy"),
+        a2 = new Album("Tom Waits", "Closing Time"),
+        a3 = new Album("John Cale", "Paris 1919"),
+        favorite;
+
+    box.addAlbum(a1);
+    box.addAlbum(a2);
+    box.addAlbum(a3);
+
+    a1.play() ; // prints "Playing The Who - Tommy"
+    a2.play(); // prints "Playing John Cale - Paris 1919"
+    a1.play(); // prints "Playing The Who - Tommy"
+
+    favorite = box.favoriteAlbum();
+
+    // prints "favorite album is The Who - Tommy"
+    console.log("favorite album is " + favorite);
+
+}());*/
+
+
+
+				(function(){
+					//code
+					function musicBox(){
+						var albums=[];
+						var self={
+						addalbum:function(z){
+							albums.push(z);
+						},
+						favoritealbum:function(ab,bc){
+
+						}
+
+					};
+					return self;
+				}
+						function album(ab,bc){
+							var count=0;
+							var self={
+								play:function(){
+									console.log("playing"+" "+ab+"-"+bc);
+									count+=1;
+								}
+							};
+							return self;
+						}
+
+
+					var box =musicBox(),
+					 	a1= album("The who","tommy"),
+						a2= album("tom waits","closing time"),
+						a3= album("john cale", "paris 1919"),
+						favorite;
+					box.addalbum(a1);
+					box.addalbum(a2);
+					box.addalbum(a3);
+
+
+					a1.play();//print "playing the who-tommy"
+					a2.play();//print "playing tom waits-closing time"
+					a1.play();//prints"playing the who-tommy"
+
+
+					favorite=box.favoritealbum();
+
+					//prints "favorite album is the who-tommy"
+					console.log("favorite album is"+favorite);
+}());
+
+		</script>
+	</body>
+
+
+</html>

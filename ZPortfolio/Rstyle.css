@@ -1,0 +1,44 @@
+
+/*Strip the ul of padding and list styling*/
+.menubar ul {list-style-type:none; margin:0; padding:0; position: relative; width: 100%}
+
+/*Create a horizontal list with spacing*/
+.menubar li { display:inline-block; float: left; width: 25%;}
+
+/*Style for menu links*/
+.menubar li a { display:block; min-width:140px; padding: 5% 0 5% 0; text-align: center; font-family: arial; font-size: 17px; color: white; background: #353535; text-decoration: none;
+ border-radius: 30px; box-shadow: 20px 20px 30px grey;}
+
+/*Hover state for top level links*/
+.menubar li:hover a { color: #353535; background-color: #F5F5F5;}
+
+/*Prevent text wrapping*/
+.menubar li ul li a { width: auto; min-width: 100px; padding: 0 20px;}
+
+/*Style 'show menu' label button and hide it by default*/
+.menubar .show-menu { font-family: arial; text-decoration: none; color: white; font-size: 17px; background: #353535; text-align: left; padding: 2%; display: none;}
+.menubar .show-menu img { float: right; width: 35px; height: 25px;}
+
+/*Hide checkbox*/
+.menubar input[type=checkbox]{ display: none;}
+
+/*Show menu when invisible checkbox is checked*/
+.menubar input[type=checkbox]:checked ~ #menu{ display: block;}
+
+
+/*Responsive Styles*/
+@media screen and (max-width : 780px){
+	/*Make dropdown links appear inline*/
+	.menubar ul { position: static; display: none;}
+
+	/*Create vertical spacing*/
+	.menubar li { border-bottom: 1px solid white;}
+
+	/*Make all menu links full width & padding*/
+	.menubar ul li, li a { width: 100%;}
+	.menubar li a {	padding: 2% 0 2% 0; font-size: 15px;}
+
+	/*Display 'show menu' link*/
+	.menubar .show-menu { display:block; border-bottom: 1px solid white; border-radius: 30px; padding-left: 15px;}
+	.menubar .show-menu img { float: right; width: 30px; height: 20px; padding-right: 10px;}
+}

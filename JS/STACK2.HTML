@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>STACKING AN ELEMENT</title>
+</head>
+<body>
+<form>
+	<fieldset>
+		<legend>Stacking</legend>
+		<input class ="txt" type="text" id="stackTxt1">
+		<br>
+		<input class ="txt" type="text" id="stackTxt2">
+		<br>
+		<input class ="txt" type="text" id="stackTxt3">
+		<br>
+		<input class ="txt" type="text" id="stackTxt4">
+		<br>
+		<input class ="txt" type="text" id="stackTxt5">
+		<br>
+		<br>
+		<label> Enter a number: </label>
+		<input type="text" Name="inputText" id="inputText" value="Hello">
+		<br>
+		<br>
+		<input type="button" Name="PushButton" value="push" onclick="push()">
+		<input type="button" Name="PopButton" value="pop" onclick="pop()">
+	</fieldset>
+
+</form>
+
+
+</body>
+<script type="text/javascript">
+
+var array1=[];
+var arrayLength=array1.length;
+var i,swap;
+
+/*var inputValue = document.getElementById(inputText).value
+var stackValue1 =document.getElementById(stackTxt1).value
+var stackValue2 =document.getElementById(stackTxt2).value
+var stackValue3 =document.getElementById(stackTxt3).value
+var stackValue4 =document.getElementById(stackTxt4).value
+var stackValue5 =document.getElementById(stackTxt5).value*/
+	function push()
+	{
+	    if(array1.length<5)
+	    {
+	    	array1[array1.length]=inputText.value;
+  			document.getElementById("stackTxt"+array1.length).value=array1[array1.length-1]
+  			console.log(array1)
+  			console.log(array1.length)
+	   }
+
+	   else
+
+	   	{
+
+	   	   	array1.shift()
+	   	   	for (i=1;i<=array1.length;i++)
+	   	   	{
+	   	   		document.getElementById("stackTxt"+i).value=array1[i-1]
+	   	    }
+
+	   		array1[array1.length]=inputText.value;
+  			document.getElementById("stackTxt"+array1.length).value=array1[array1.length-1]
+
+
+	   }
+
+	}
+	  /*
+	  if (array1.length>0 || array1.length<=5)
+
+	  	{
+			array1[array1.length-1]=inputText.value;
+			document.getElementById("stackTxt" + array1.lengh).value=array1[array1.length-1]
+		}
+	 console.log(array)
+  	  */
+
+/*
+		array1.push(inputText.value	);
+		//("stackTxt"+array1.length).value=array1[array1.length-1];
+		console.log("stackTxt"+array1.length)
+		document.getElementById("stackTxt"+array1.length).value=inputText.value
+		console.log(array1)	;
+
+*/
+
+
+	function pop()
+	{
+
+			for(i=1;i<=array1.length;i++)// to empty the values from the HTML text boxes
+			{
+				document.getElementById("stackTxt"+i).value=""
+
+			}
+			array1.shift(); // To remove the 1st element of the array.
+	   	   	for (i=1;i<=array1.length;i++)  // to display the value of array into the HTML text boxes
+
+	   	   	{
+	   	   		document.getElementById("stackTxt"+i).value=array1[i-1]
+	   	    }
+
+	   		/*array1[array1.length]=inputText.value;
+  			document.getElementById("stackTxt"+array1.length).value=array1[array1.length-1] */
+
+  			console.log("poparray",array1);
+
+	}
+</script>
+</html>

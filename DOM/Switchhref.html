@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link id="style" rel="stylesheet" type="text/css" href="default.css">
+</head>
+<script type="text/javascript">
+	
+	function swapstylesheet(sheet)
+	{
+		document.getElementById("style").setAttribute("href",sheet)
+	}
+</script>
+<body>
+	<button onclick="swapstylesheet('dark.css')">Click</button>
+	<button onclick="swapstylesheet('blue.css')">Click me</button>
+	<button onclick="swapstylesheet('default.css')">HIt</button>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+	<head>
+
+	</head>
+	<body>
+		<script>
+//exercise 1
+			(function(){
+
+				var summer =function (){
+					var sum=0;
+					var abc={
+						add:function(n){sum+=n;},
+						getCurrentSum: function(){return sum;}
+
+					}
+					return abc;
+				}
+				var s1=summer();
+				var s2=summer();
+				s1.add(20);
+				s2.add(30);
+				s2.add(5);
+
+				//prints 30
+				console.log(s1.getCurrentSum());
+				//prints 35
+				console.log(s2.getCurrentSum());
+			}());
+
+
+		</script>
+	</body>
+
+
+</html>

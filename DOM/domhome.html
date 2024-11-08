@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	</title>
+	<script type="text/javascript">
+
+	function onLoad()
+		{
+		document.getElementById("number").focus();
+		 }
+	
+
+	function myfunction()
+	{		
+		var val=document.getElementById("number").value;
+		document.getElementById("output").value += val + "\n";
+		if(document.getElementById("output").value.length>10)
+		{
+			document.getElementById("output").value.pop();
+		}
+		document.getElementById("number").focus();
+		document.getElementById("number").value=" ";
+					
+	}
+
+
+	</script>
+
+
+	<style>
+		body{
+				border:2px solid pink;
+			}
+		form{
+				text-align:center
+			}	
+		#output,#number{
+						display:block;
+						width: 200px;
+						margin:0 auto;
+						margin-top: 20px;
+						}
+		#number{
+				height: 50px;
+			}
+		#button1,#button2{
+							margin-top: 20px;
+						}
+	</style>
+</head>
+<body onLoad="onLoad()">
+		<form>	
+				<textarea id="output" rows="15" cols="25" >
+
+               </textarea>
+               <input type="text" name="" id="number">
+               <input type="button" name="" value="Insert" id="button1" onclick="myfunction()" onclick="abc()">
+               <input type="button" name="" value="Delete" id="button2">
+
+		</form>
+</body>
+</html>
+
+
+
+
+
+<!--CODE: SELECT ALL
+<html>
+<head>
+<title>Testing</title>
+<script type="text/javascript">
+function updateLength()
+{
+ var charcount = document.getElementById('essay').value.length;
+ document.getElementById('count').value = charcount;
+ document.getElementById('count2').value = charcount -
+  (document.getElementById('essay').value.split(/\r/).length - 1) +
+  (document.getElementById('essay').value.split(/\n/).length - 1);
+ showCounts();
+}
+function showCounts()
+{
+ document.getElementById('crlfcount').value = 
+   document.getElementById('essay').value.split(/\r\n/).length;
+ document.getElementById('newlinecount').value = 
+   document.getElementById('essay').value.split(/\n/).length;
+ document.getElementById('returncount').value = 
+   document.getElementById('essay').value.split(/\r/).length;
+}
+</script>
+</head>
+<body>
+<h3>Test by typing here:</h3>
+<form>
+<textarea name="essay" id="essay" cols="40" rows="20"
+  onkeyup="updateLength();"></textarea>
+<p>Length (.length): <input type="text" id="count" /><br />
+  Adjusted length: <input type="text" id="count2" /><br />
+  Count of CRLFs: <input type="text" id="crlfcount" /><br />
+  Count of LFs: <input type="text" id="newlinecount" /><br />
+  Count of CRs: <input type="text" id="returncount" /></p>
+</form>
+</body>
+</html>-->

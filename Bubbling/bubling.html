@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		.css{
+			display:table-cell;
+			padding:20px;
+			border:5px solid black;
+
+		}
+	</style>
+</head>
+<body>
+	<!--<div class="css" onclick="alert('divclick')">div clicked
+		<span class="css" onclick="alert('spanclick')">span clicked
+		<input type="button" value="click">
+
+		</span>
+	</div>-->
+
+
+	<div class="css" id="div1">div1
+		<div class="css" id="div2">div2
+			<div class="css" id="div3">div3
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var	divElements=document.getElementsByTagName('div');
+			for(var i=0; i<divElements.length;i++)
+			{
+				divElements[i].onclick=function(event){
+					event=event||window.event;
+					if(event.stopPropagation)
+						{event.stopPropagation()}
+					else{
+						event.cancelBubble=true;
+					}
+					this.style.borderColor="blue";
+					alert(this.getAttribute("id")+ "has clicked");
+				}
+			}
+	</script>
+
+</body>
+</html>

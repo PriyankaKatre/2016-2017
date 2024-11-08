@@ -1,0 +1,225 @@
+.container-fluid {
+	.row {
+		.rectangle {
+			border-top:80px solid #001a33;
+			border-left:80px solid #003366;
+			border-bottom:60px solid #001a33;
+			border-right:70px solid #003366;
+			background-color:black;
+			position:relative;
+
+			.navbar-header {
+				.navbar-brand {
+					height:100px !important;
+					width:200px !important;
+					margin-left:-30px;
+				}
+			}
+			nav {
+				margin-top:-90px;
+				ul {
+					margin-top:20px;
+					.active {
+						background-color:#003366 !important;
+						}
+					li {
+						border-radius:10px;
+						a {
+						  color: #fff !important;
+						  font: bold 17px/17px 'Oswald';
+						}
+						a:hover {
+						  color:#ffffff;
+						  background:#99003d;
+						  border-radius:10px;
+						}
+					}
+				}
+			}
+			.indexPage {
+				.about {
+					margin-top:10px;
+					font: bold 33px/33px;
+					color: #ccc;
+					.maincontent {
+						h1 {
+						  font: normal 33px/33px 'Oswald';
+						  text-transform: uppercase;
+						  font-weight:bold;
+						}
+						h4 {
+						  font: normal 20px/25px 'Oswald';
+						  text-transform: uppercase;
+						}
+						h6 {
+						  font: bold 19px/26px 'Oswald';
+						  color: #333;
+						}
+						.jumbotron {
+							background-color:#262626 !important;
+							width:80%;
+							margin:auto;
+							margin-top:2%;
+							p {
+							  font-size:1.8em;
+							  font-style:italic;
+							  color:#f93302;
+							  margin-top:15px;
+							}
+						}
+					}
+				}
+					.btn {
+						margin-top:3% !important;
+					}
+						img {
+							margin-top:-2%;
+							width:100%;
+						}
+			}
+
+			.portfolio {
+				.slideshow {
+					margin-top:4%;
+					width:100%;
+					margin: 4% auto;
+					position:relative;
+					height:560px;
+
+					.slideImage {
+						position:absolute;
+						left:0px;
+						right:0px;
+						margin:0 auto;
+						width:80%;
+						border:2px solid grey;
+						padding:0px !important;
+						border-radius:10px;
+						height:550px;
+
+					}
+				}
+				.images {
+					text-align:center;
+					margin:20px;
+					display:block;
+					figure	{
+						a {
+							img {
+								border-radius:20px;
+								height:250px ! important;
+								padding:10px ! important;
+							}
+						}
+						figcaption{
+							width:80%;
+							margin:4% auto;
+							color:#fff;
+						}
+					}
+
+				}
+				img {
+				 width:100%;
+				}
+			}
+			.about {
+				.aboutcontant {
+					margin-left:5%;
+					h3 {
+				color:#fff;
+				margin-top:5%;
+
+				}
+				ul {
+				color:orange;
+				margin-top:3%;
+				margin-bottom:3%;
+
+					li {
+					 font-size:18px;
+					 line-height:30px;
+					}
+				}
+				}
+
+				img {width:100%;}
+			}
+
+			.contact {
+				margin:5% 0%;
+				.contactInfo {
+					margin-left:5%;
+					margin-bottom:5%;
+					h3 {
+					color:#fff;
+					}
+					h4 {
+					 color:orange;
+					}
+				}
+
+			}
+			.footer {
+				clear:both;
+				ul {
+					position:relative;
+					margin-bottom:-50px;
+					li {
+						a {
+						color:#fff;
+						font-size:12px;
+						border-right:1px solid red;
+						line-height: 3px;
+						}
+						&:last-child {
+							a {
+							border:none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and(max-width:768px)
+{
+	.rectangle {
+			border-left:30px solid #003366! important;
+			border-bottom:30px solid #001a33;
+			border-right:30px solid #003366! important;
+		nav {
+			ul{
+				margin-top:1px ! important;
+				li {
+				text-align:center;
+				}
+			}
+		}
+		.navbar-header {
+			.navbar-toggle {
+				margin-top:30px;
+				background-color: #003366 ! important;
+				.icon-bar {
+					background-color:#ffffff;
+				}
+			}
+		}
+		.footer {
+				ul {
+					position:relative;
+					margin-bottom:-150px ! important;
+					margin-left:20px;
+					li {
+						a {
+						padding:5px ! important;
+						float:left ! important;
+						color:#fff;
+						font-size:10px ! important;
+						}
+					}
+				}
+		}
+	}
+}

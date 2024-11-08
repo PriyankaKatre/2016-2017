@@ -1,0 +1,22 @@
+/*.banner {
+	margin-top:10px;
+}
+.banner .slide img {
+	width:99.4%;
+	height:500px;
+	border:2px solid #373737;
+}*/
+section {
+	padding-top:30px;
+	width:75%;
+	margin:auto;
+	color:#1a1a00;
+
+}
+
+/*responsive*/
+
+@media (max-width: 660px) {
+		section {margin-top:40px; width:90%;}
+
+}

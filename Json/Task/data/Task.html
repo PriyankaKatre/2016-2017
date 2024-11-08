@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Currency Solution Management System</title>
+			<!-- Latest compiled and minified CSS -->
+			<link rel="stylesheet" href="task.css">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+			<!-- jQuery library -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+			<!-- Latest compiled JavaScript -->
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<script>
+					$(document).ready(function(){
+						$.getJSON("client.json",function(json){
+							var data=json;
+							console.log(data)
+							$(".companyName").text(data.name);
+							$(".phone").text(data.phone);
+							$(".net_position").text(data.net_position);
+							$(".Dealer_name").text(data.dealer);
+							/*$(".last_login_time").text(data.last_login);*/
+							var month=["Jan", "Feb", "March","Apr", "May", "Jun", "July", "Aug", "Sep", "Oct", "Nov", "Dec"]
+							var date=new Date(data.last_login)
+							var formattedDate=month[date.getMonth()]+' '+date.getDate()+' '+date.getHours()+':'+date.getMinutes();
+							$(".last_login_time").text(formattedDate);
+							$(".main_contact_name").text(data.main_contact.name)
+							$(".main_contact_position").text(data.main_contact.position)
+							var month=["Jan", "Feb", "March","Apr", "May", "Jun", "July", "Aug", "Sep", "Oct", "Nov", "Dec"]
+							var date=new Date(data.last_call.date)
+							var formattedDate=month[date.getMonth()]+' '+date.getDate()+' '+date.getHours()+':'+date.getMinutes();
+							$(".last_call_time").text(formattedDate)
+							$(".contact").text('('+data.last_call.contact+')')
+						})
+						$.getJSON("notes.json",function(json){
+							var data=json;
+							console.log(data)
+							var month=["Jan", "Feb", "March","Apr", "May", "Jun", "July", "Aug", "Sep", "Oct", "Nov", "Dec"]
+							var date=new Date(data[0].date)
+							var formattedDate=month[date.getMonth()]+' '+date.getDate();
+							$(".notes_date").text(formattedDate);
+							$(".author").text(data[0].author);
+							$(".text").text(data[0].text);
+							var month01=["Jan", "Feb", "March","Apr", "May", "Jun", "July", "Aug", "Sep", "Oct", "Nov", "Dec"]
+							var date01=new Date(data[1].date)
+							console.log(date01)
+							var formattedDate01=month01[date01.getMonth()]+' '+date01.getDate();
+							console.log(formattedDate01)
+							$(".notes_date1").text(formattedDate01);
+							$(".author1").text(data[1].author);
+							$(".text1").text(data[1].text);
+						})
+						$.getJSON("trade.json", function(json){
+							var data=json;
+							$(".id").text(data.id);
+							$(".buy_amount").text(data.buy.amount);
+							$(".buy_currency").text(data.buy.currency)
+							$(".sell_amount").text(data.sell.amount);
+							$(".sell_currency").text(data.sell.currency)
+							$(".margin_percent").text(data.margin+'%')
+							$(".Dealer_right_name").text(data.dealer)
+						})
+
+					})
+			</script>
+			</head>
+	<body>
+		<div class="container-fluid">
+			<div class="head">
+				<ul>
+					<li style="color:red"></li>
+					<li style="color:yellow"></li>
+					<li style="color:green"></li>
+				</ul>
+				<header>Currency Solution Management System</header>
+			</div><!--head close-->
+		</div><!--container-fluid close-->
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="left">
+						<div class="col-sm-4 ">
+							<div class="account"> Corporate account</div>
+							<div class="companyName"></div>
+							<div class="phone"></div>
+							<div class="SC122323XE">SC122323XE</div>
+							<div class="clear"></div>
+							<div class="NP">NP:$</div>
+							<div class="net_position">NP:$</div>
+							<div class="clear"></div>
+							<div class="col-sm-6">
+								<div class="Dealer">Dealer</div>
+								<div class="Dealer_name">	</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="last_login">Last Login</div>
+								<div class="last_login_time">	</div>
+							</div>
+							<div class="Last_Notes">Last_Notes
+								<i class="fa fa-commenting-o" aria-hidden="true"></i>
+							</div>
+							<div class="notes">
+								<div class="col-sm-12">
+									<div class="col-sm-4">
+										<div class="notes_date"></div>
+									</div>
+									<div class="col-sm-4">
+										<div class="author"></div>
+									</div>
+									<div class="col-sm-4">
+										<div class="text"></div>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<div class="col-sm-4">
+										<div class="notes_date1"></div>
+									</div>
+									<div class="col-sm-4">
+										<div class="author1"></div>
+									</div>
+									<div class="col-sm-4">
+										<div class="text1"></div>
+									</div>
+								</div>
+							</div><!--Notes closed-->
+						</div>
+					</div><!--left side div close-->
+					<div class="middle">
+						<div class="col-sm-3" >
+							<div class="main_contact">Main Contact
+								<i class="fa fa-user" aria-hidden="true"></i>
+							</div>
+							<div class="main_contact_name"></div>
+							<div class="main_contact_position"></div>
+							<div class="last_call">Last Call</div>
+							<div class="col-sm-6">
+								<div class="last_call_time"></div>
+							</div>
+							<div class="col-sm-6">
+								<div class="contact"></div>
+							</div>
+						</div>
+					</div>	<!--Middle div close-->
+					<div class="right">
+						<div class="col-sm-4" >
+							<div class="activetrade">Active Trade</div>
+							<div class="id"></div>
+							<div class="col-sm-12 Buy">
+								<div class="col-sm-4 buy">Buy</div>
+								<div class="col-sm-4 buy_amount"></div>
+								<div class="col-sm-4 buy_currency"></div>
+							</div> <!--Buy close-->
+							<div class="col-sm-12 Sell">
+								<div class="col-sm-4 sell">Sell</div>
+								<div class="col-sm-4 sell_amount"></div>
+								<div class="col-sm-4 sell_currency"></div>
+							</div><!--Sell close-->
+
+							<div class="col-sm-12">
+								<div class="col-sm-4 margin">Margin</div>
+								<div class="col-sm-4 margin_percent"></div>
+							</div><!--margin close-->
+
+							<div class="Dealer_right">Dealer</div>
+								<div class="Dealer_right_name"></div>
+						</div>
+					</div><!--right div close-->
+				</div><!--row close-->
+
+		</section>
+			<footer class="fluid-container">
+				<div class="col-sm-6">
+					<div class="col-sm-6">
+						<button class=" btn1">ACCEPT</button>
+					</div>
+					<div class="col-sm-6">
+						<button class=" btn2">TRANSFER</button>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<button class=" btn3">DECLINE</button>
+				</div>
+			</footer>
+
+		</div><!--container div close-->
+	</body>
+
+</html>

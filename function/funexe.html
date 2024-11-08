@@ -1,0 +1,68 @@
+<!doctype HTML>
+<html>
+	<head>
+
+	</head>
+	<body>
+
+		<script>
+
+		function abc(){
+var person = {
+    firstName: "John",
+    lastName : "Doe",
+    id       : 5566,
+    fullName : function(a) {
+       console.log(a)
+    }
+};
+return person;
+};
+var p1=abc();
+p1.fullName("priyanka");
+
+		/*function numbers () {
+			var num1 = 5,
+     			num2 = 8;
+			return num3=num1+num2;
+
+			}
+
+			console.log(numbers());*/
+		/*var animal=function(name){
+			var pet={
+				name:name
+			};
+			return pet.name;
+		}
+		var animal1=animal('cat');
+		var animal2=animal('dog');
+
+		console.log('I have a pet named '+animal2);
+
+
+			// prints I have a pet named Moris*/
+			/*function animal(name)
+			{
+			return this.name=name
+			}
+		var animal1= new animal('cat');
+		var animal2= new animal('dog');
+
+		console.log(animal1);*/
+		function cons(name,age,state)
+		{
+			this.name=name;
+			this.age=age;
+			this.state=state;
+			/*this.person=function(){
+				return this.name+" "+this.age+" "+this.state;
+			}*/
+
+		}
+		var p1=new cons('John',23,'London')
+		console.log(p1)
+
+		</script>
+	</body>
+/html>

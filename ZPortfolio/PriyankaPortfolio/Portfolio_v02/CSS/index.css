@@ -1,0 +1,186 @@
+.container-fluid .row .rectangle {
+  border-top: 80px solid #001a33;
+  border-left: 80px solid #003366;
+  border-bottom: 60px solid #001a33;
+  border-right: 70px solid #003366;
+  background-color: black;
+  position: relative;
+}
+.container-fluid .row .rectangle .navbar-header .navbar-brand {
+  height: 100px !important;
+  width: 200px !important;
+  margin-left: -30px;
+}
+.container-fluid .row .rectangle nav {
+  margin-top: -90px;
+}
+.container-fluid .row .rectangle nav ul {
+  margin-top: 20px;
+}
+.container-fluid .row .rectangle nav ul .active {
+  background-color: #003366 !important;
+}
+.container-fluid .row .rectangle nav ul li {
+  border-radius: 10px;
+}
+.container-fluid .row .rectangle nav ul li a {
+  color: #fff !important;
+  font: bold 17px/17px 'Oswald';
+}
+.container-fluid .row .rectangle nav ul li a:hover {
+  color: #ffffff;
+  background: #99003d;
+  border-radius: 10px;
+}
+.container-fluid .row .rectangle .indexPage .about {
+  margin-top: 10px;
+  font: bold 33px/33px;
+  color: #ccc;
+}
+.container-fluid .row .rectangle .indexPage .about .maincontent h1 {
+  font: normal 33px/33px 'Oswald';
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.container-fluid .row .rectangle .indexPage .about .maincontent h4 {
+  font: normal 20px/25px 'Oswald';
+  text-transform: uppercase;
+}
+.container-fluid .row .rectangle .indexPage .about .maincontent h6 {
+  font: bold 19px/26px 'Oswald';
+  color: #333;
+}
+.container-fluid .row .rectangle .indexPage .about .maincontent .jumbotron {
+  background-color: #262626 !important;
+  width: 80%;
+  margin: auto;
+  margin-top: 2%;
+}
+.container-fluid .row .rectangle .indexPage .about .maincontent .jumbotron p {
+  font-size: 1.8em;
+  font-style: italic;
+  color: #f93302;
+  margin-top: 15px;
+}
+.container-fluid .row .rectangle .indexPage .btn {
+  margin-top: 3% !important;
+}
+.container-fluid .row .rectangle .indexPage img {
+  margin-top: -2%;
+  width: 100%;
+}
+.container-fluid .row .rectangle .portfolio .slideshow {
+  margin-top: 4%;
+  width: 100%;
+  margin: 4% auto;
+  position: relative;
+  height: 560px;
+}
+.container-fluid .row .rectangle .portfolio .slideshow .slideImage {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
+  width: 80%;
+  border: 2px solid grey;
+  padding: 0px !important;
+  border-radius: 10px;
+  height: 550px;
+}
+.container-fluid .row .rectangle .portfolio .images {
+  text-align: center;
+  margin: 20px;
+  display: block;
+}
+.container-fluid .row .rectangle .portfolio .images figure a img {
+  border-radius: 20px;
+  height: 250px ! important;
+  padding: 10px ! important;
+}
+.container-fluid .row .rectangle .portfolio .images figure figcaption {
+  width: 80%;
+  margin: 4% auto;
+  color: #fff;
+}
+.container-fluid .row .rectangle .portfolio img {
+  width: 100%;
+}
+.container-fluid .row .rectangle .about .aboutcontant {
+  margin-left: 5%;
+}
+.container-fluid .row .rectangle .about .aboutcontant h3 {
+  color: #fff;
+  margin-top: 5%;
+}
+.container-fluid .row .rectangle .about .aboutcontant ul {
+  color: orange;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+.container-fluid .row .rectangle .about .aboutcontant ul li {
+  font-size: 18px;
+  line-height: 30px;
+}
+.container-fluid .row .rectangle .about img {
+  width: 100%;
+}
+.container-fluid .row .rectangle .contact {
+  margin: 5% 0%;
+}
+.container-fluid .row .rectangle .contact .contactInfo {
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+.container-fluid .row .rectangle .contact .contactInfo h3 {
+  color: #fff;
+}
+.container-fluid .row .rectangle .contact .contactInfo h4 {
+  color: orange;
+}
+.container-fluid .row .rectangle .footer {
+  clear: both;
+}
+.container-fluid .row .rectangle .footer ul {
+  position: relative;
+  margin-bottom: -50px;
+}
+.container-fluid .row .rectangle .footer ul li a {
+  color: #fff;
+  font-size: 12px;
+  border-right: 1px solid red;
+  line-height: 3px;
+}
+.container-fluid .row .rectangle .footer ul li:last-child a {
+  border: none;
+}
+@media only screen and (max-width: 768px) {
+  .rectangle {
+    border-left: 30px solid #003366! important;
+    border-bottom: 30px solid #001a33;
+    border-right: 30px solid #003366! important;
+  }
+  .rectangle nav ul {
+    margin-top: 1px ! important;
+  }
+  .rectangle nav ul li {
+    text-align: center;
+  }
+  .rectangle .navbar-header .navbar-toggle {
+    margin-top: 30px;
+    background-color: #003366 ! important;
+  }
+  .rectangle .navbar-header .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+  }
+  .rectangle .footer ul {
+    position: relative;
+    margin-bottom: -150px ! important;
+    margin-left: 20px;
+  }
+  .rectangle .footer ul li a {
+    padding: 5px ! important;
+    float: left ! important;
+    color: #fff;
+    font-size: 10px ! important;
+  }
+}

@@ -1,0 +1,71 @@
+body { width:900px; margin:auto !important; border: 1px solid}
+
+.head {background:#ccc linear-gradient(#ccc,#999999); padding:10px 0px;}
+
+.page ul,header { display:inline-block; }
+.page ul { padding-left:5px }
+.page ul li { opacity:.8; margin-right:10px; float:left; list-style-type:none;}
+.page ul li:first-child {  border:8px solid red; border-radius:40px;  }
+.page ul li:nth-child(2)  { border:8px solid yellow; border-radius:40px; }
+.page ul li:last-child { border:8px solid green; border-radius:40px; }
+.page header { text-align:center; font-size:14pt; margin-top:-40px; color:#000;}
+
+/* Style for section left maincontent*/
+
+section .main_content { width:800px; margin:auto;}
+section { margin-top:25px}
+section .row .left { margin-left:20px;}
+section .row .left .left_col {  font-size:13pt; width:44% !important; padding:0px !important}
+section .row .left .account { color:#adafb2;}
+section .row .left .companyName { color:#000; font-size:22pt; margin-top:10px }
+section .row .left .phone { margin-top:30px; }
+section .row .left .SC122323XE { float:left; margin-top:22px; color:#6699ff; border-bottom:2px solid #6699ff;}
+.clear { clear:both }
+section .row .left .NP,section .row .left .net_position { margin-top:20px; float:left}
+section .row .left .net_position,.id { font-weight:bold; }
+section .row .left .Dealer,section .row .left .last_login{ margin-top:55px; color:#ccc }
+section .row .left .Dealer,section .row .left .last_login,section { margin-left:-15px; }
+section .row .left .Dealer_name,section .row .left .last_login_time { margin-bottom:45px;margin-left:-20px;}
+section .row .left .Last_Notes { margin-top:55px; color:#ccc  }
+section .row .left .notes { margin-left:-30px;}
+section .row .left .author,.author1 { margin-left:-50px }
+section .row .left .notes_date1,.author1,.text1 { margin-top:20px; }
+section .row .left .notes .text { margin-left:-50px;}
+section .row .left .notes .text1 {  margin-left:-40px; }
+/* Style for section middle maincontent*/
+section .row .middle { margin-left:60px}
+section .row .middle .middle_col { font-size:13pt; width:25% !important; padding:0px !important; margin:0px !important }
+section .row .middle .main_contact { margin-top:100px; color:#adafb2; font-size:13pt; }
+section .row .middle .main_contact_name { margin-top:32px; font-size:13pt; color:#000000 }
+section .row .middle .main_contact_position { font-size:12pt; margin-top:5px; width:200%;}
+section .row .middle .last_call { margin-left:2px; margin-top:70px; color:#adafb2;}
+section .row .middle .last_call_time { margin-left:-13px; width:200% }
+section .row .middle .contact { margin-left:-10px; width:200%}
+
+/* Style for section right maincontent*/
+
+section .row .right { font-size:13pt ;  }
+section .row .right .right_col { width:29% !important; padding-left:60px; padding-right:0px !important; }
+section .row .right .activetrade { margin-left:30px; color:#adafb2;  }
+section .row .right .id { margin-left:30px; }
+section .row .right .Buy { padding-right:0px !important; margin-top:70px; border-bottom:1px solid #ccc;}
+section .row .right .buy { padding-right:0px !important; color:#adafb2;}
+section .row .right .Sell { padding-right:0px !important; margin-top:10px; border-bottom:1px solid #ccc;}
+section .row .right .sell { padding-right:0px !important; color:#adafb2;  }
+section .row .right .sell .sell_currency { margin-left:25px }
+section .row .right .margin { color:#adafb2; margin-bottom:60px;}
+section .row .right .margin,.margin_percent { margin-top:10px;  margin-bottom:60px;}
+section .row .right .margin_percent {  margin-left:5px}
+section .row .right .Dealer_right {  margin-left:30px; color:#adafb2; }
+section .row .right .Dealer_right_name { margin-left:28px; }
+
+/* Style for buttons*/
+
+footer { position:relative; margin-top:30px; font-size:14pt; background-color:#ccffff; padding:15px; height:70px;}
+footer .btn1 {width:170px; padding:8px;  background-color:#66cc66; border:1px solid #66cc66; border-radius:5px; color:#fff; }
+footer .btn2 {width:170px; padding:8px;   background-color:#6699ff; border:1px solid #66cc66; border-radius:5px; color:#fff; }
+footer .btn3 {width:170px; padding:8px; margin-left:10em;  background-color:#cc6633; border:1px solid #66cc66; border-radius:5px; color:#fff;}
+
+
+
+

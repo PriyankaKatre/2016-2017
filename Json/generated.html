@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+		<script data-require="jquery@*" data-semver="3.0.0" src="jquery-3.1.1.min.js">
+		</script>
+</head>
+
+<body>
+	<h1>Employee details:<span class="d0"></span></h1>
+	<h1>Employee details:<span class="d1"></span></h1>
+	<h1>Employee details:<span class="d2"></span></h1>
+	<h1>Employee details:<span class="d3"></span></h1>
+	<h1>Employee details:<span class="d4"></span></h1>
+	<script>
+		$(document).ready(function(){
+			//all data fron generated.json goes to json
+			$.getJSON('trade.JSON',function(json) {
+				var data=json;
+				console.log(data);
+				$('.d0').text(data.buy.amount)
+			});
+		});
+	</script>
+</body>
+</html>

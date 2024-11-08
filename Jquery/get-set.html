@@ -1,0 +1,71 @@
+<html>
+
+<head>
+		<script data-require="jquery@*" data-semver="3.0.0" src="jquery-3.1.1.min.js">
+		</script>
+	<style>
+		/*ul{
+			width:100px;
+			height:200px;
+			border:1px solid #c7c7c7;
+
+		}*/
+		body *{
+			border:2px solid red;
+			padding:10px;
+		}
+
+		/*.abc{
+			background:red;
+		}
+		.def{
+			background:green;
+		}*/
+	</style>
+</head>
+<body>
+	<!--<ul>
+		<li>A</li>
+		<li>B</li>
+		<li>C</li>-->
+	<!--<ul class="def">
+	ul
+		<li>li
+			<span>
+				Priyanka
+			</span>
+		</li>
+	</ul>
+	<button >Add Input</button>
+	<input type="text">-->
+	<button >Add Input</button>
+	<p>Para</p>
+	<h1>heading1</h1>
+	<h2>heading2<span>span</span></h2>
+	<h3>heading3</h3>
+	<div>heading3</div>
+
+	<script>
+		$(document).ready(function(){
+			//$("button").click(function(){
+				//$("ul").append('<li>D</li>');
+				//$("ul").append('<li>'+$("input").val()+'</li>');
+			/*	if($('input').val()=='')
+				{
+					$('ul').removeClass('def').addClass('abc');
+				}*/
+				//$("button").empty();
+				//$('span').parentsUntil("body").css({'border':'1px solid red'});
+				//$('h2').next();
+				$('h2').prevUntil('p').css('background-color','red');
+				//$('h2').nextUntil();
+				//$('h2').prev();
+				//$('h2').prevAll();
+				//$('h2').prevUntil();
+
+
+
+		});
+	</script>
+</body>
+</html>

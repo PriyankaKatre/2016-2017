@@ -1,0 +1,36 @@
+<!--Event Phase Bubbling Phase-->
+
+
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Onclick Events</title>
+        <script>
+            function f1() {
+                console.log("f1");
+            }
+            function f2() {
+                console.log("f2");
+            }
+            function f3() {
+                console.log("f3");
+            }
+            function f4() {
+                console.log("f4");
+            }
+        </script>
+    </head>
+    <body>
+        <div id="level1" onclick="f1()" style="background-color: brown; color: aliceblue;padding:20px">
+            This is div at level1
+            <div id="level2" onclick="f2()" style="background-color: burlywood;padding:20px">
+                This is div at level2
+                <p onclick="f3()" style="background-color: appworkspace;padding:20px">
+                    <button onclick="f4()" style="background-color: beige;padding:20px">   
+                        Click 
+                    </button>
+                </p>
+            </div>
+        </div>    
+    </body>
+</html>

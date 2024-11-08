@@ -1,0 +1,29 @@
+.page{
+	width: 960px;
+	margin:auto;
+}
+.page .header{
+	background-color: #007d66;
+	}
+.page .header .logo{
+	margin: 30px 8px 21px 22px;
+	}
+.page .header .text{
+	margin: 74px 520px 24px 21px;
+}
+.page .content{
+			position: relative;
+}	
+.page .content .Back2{
+			position: absolute;
+			top:12px;
+			right:6px;
+}	
+.page .content .Back3{
+				position: absolute;
+			top:414px;
+			left:6px;}	
+.page .content .Back4{
+				position: absolute;
+			top:492px;
+			left:8px;}													

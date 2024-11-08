@@ -1,0 +1,33 @@
+<html>
+	<head></head>
+	<body>
+		<script>
+		/*var person= function(firstName, lastName){
+		return{fname:firstName,
+			lname:lastName,
+			walk:function(){
+				document.write(this.fname+" "+this.lname+" "+"is walking");
+			}
+			};
+		}
+		var p1=person("Priyanka", "Katre");
+		p1.walk();*/
+
+		// Another way
+
+		var person1=function(firstName,lastName){
+			var obj1={}
+			obj1.name=firstName;
+			obj1.lname=lastName;
+			obj1.walk=function(){
+				return(this.name+" "+this.lname+" "+"is walking");
+			};
+			return obj1;
+		}
+		var p1=person1("Priyanka", "Katre");
+		document.write(p1.walk());
+
+
+		</script>
+	</body>
+</html>

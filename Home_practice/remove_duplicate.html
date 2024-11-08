@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+		var input = [1,2,3,'aa',44,'aa',54,2,55,44,3,2];
+		for (var i = 0; i < input.length; i++) {
+		for (var j = i+1; j < input.length; j++) {
+		if(input[i] == input[j]){
+			input.splice(j,1);
+		}
+	}
+}
+document.write(input);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+
+
+
+
+/*background*/
+/* Seperate style sheet for background*/
+
+/*About*/
+.about { position:relative; text-align:center; color: #ccc; float:right;top:-30px;left:-9em;}
+.middle { position:relative;}
+.about .middle h1, h2, h3 { margin-top:0px;margin-bottom:10px;}
+.about p { margin-top:25px; font-size:1.7em; font-style:italic; color:orange;}
+.about .middle h1 { font: normal 33px/33px 'Oswald'; text-transform: uppercase; font-weight:bold;}
+.about .middle h2 { font: normal 20px/25px 'Oswald'; text-transform: uppercase;}
+.about .middle h3 { font: bold 19px/26px 'Oswald'; color: #333;}
+
+/* Why.about class is needed */
+.about h1.c_red { color:#db0448}
+.about h1.c_blue { color:#0d04f7;}
+.about h1.c_green { color:#03a503;}
+.about h1.c_pink { color:#ed0471;}
+.about h1.c_orange { color:#ff3300;}
+.about h1.c_grey { color:#754231;}
+
+/*#images #img1.c_blue, #img2.c_blue, #img3.c_blue{box-shadow: 20px 20px 30px #090e42;}
+#images #img1.c_green, #img2.c_green, #img3.c_green{box-shadow: 20px 20px 30px #012303;}
+#images #img1.c_pink, #img2.c_pink, #img3.c_pink{box-shadow: 20px 20px 30px #7c0143;}
+#images #img1.c_orange, #img2.c_orange, #img3.c_orange{box-shadow: 20px 20px 30px #a32a01;}
+#images #img1.c_grey, #img2.c_grey, #img3.c_grey{box-shadow: 20px 20px 30px #754231;}*/
+
+
+
+
+
+#images { position:relative;}
+#images #img1, #img2, #img3 { margin-top:25px;background-repeat: no-repeat;background-size: 25em 25em;height: 200px; width: 300px;display:inline-block; margin-left:1em; border-radius:20px; border:2px solid grey;}
+#images #img1 { background-image: url("images/images/image1.png");}
+#images #img2 { background-image: url("images/images/interior.png");}
+#images #img3 { background-image: url("images/images/resort.png");}
+
+/*Footer*/
+
+

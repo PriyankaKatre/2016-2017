@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+
+var num=1234;
+		var R;
+		var sum=0;
+		while(num>1)
+		{
+			R=(num%10);
+			sum+=R;
+			num=num/10;
+		}
+document.write(parseInt(sum));
+
+
+
+/*function largest(arr)
+{var arr1=arr;
+var temp;
+for(var i=0; i<arr1.length; i++)
+{
+	for(var j=i+1; j<arr1.length; j++)
+	{	if(arr1[j]>arr1[i])
+		{	temp=arr1[i];
+		arr1[i]=arr1[j];
+		arr1[j]=temp;
+		}
+	}}
+	
+	return arr1[arr1.length-2] 
+	return arr1[1];
+	 
+}
+
+document.write(largest([1, 8, -3, 0, 2, -5]));
+
+
+/*function matrix(n) {  
+  
+        var i;  
+        var j;  
+  
+        for (i=0; i < n; i++)  
+        {  
+          for (j=0; j < n; j++)  
+          {  
+               if (i === j)  
+               {  
+                  
+                 document.write(' 1 ');  
+               }  
+                        
+               else   
+                {  
+                 document.write(' 0 ');}  
+                }  
+             document.write('<br>');  
+           }  
+       }  
+matrix(4);  
+
+
+
+/*function count_vowels(input){
+	vowels = input.match(/[aeiou]/gim);
+	return vowels.length;
+}
+document.write(count_vowels("this is a test text"));
+
+
+
+
+/*str="Aeb Development Tutorial"
+var arr = (str.split(" ")).split(" ");
+
+arr.sort
+
+document.write(arr.sort());	*/
+
+/*function longestString(str) {
+
+var arr = str.split(" ");
+
+arr.sort(function(str1,str2) {
+
+if (str1.length < str2.length) {
+
+return 1;
+
+} else if (str1.length > str2.length) {
+
+return -1;
+
+} else {
+
+return 0;
+
+}
+
+});
+
+return arr[0];
+
+}
+
+document.write(longestString("Aeb Development Tutorialcdert"));
+
+/*str="the quick brown fox"
+var array1 = str.split(' ');  
+  var newarray1 = [];  
+    document.write(array1) 
+
+/*function uppercase(str)  
+{  
+  var array1 = str.split(' ');  
+  var newarray1 = [];  
+    document.write(array1) ; 
+  for(var x = 0; x < array1.length; x++){  
+      newarray1.push(array1[x].charAt(0).toUpperCase()+array1[x].slice(1));  
+  }  
+  return newarray1.join(' ');  
+}  
+document.write(uppercase("the quick brown fox")); */ 
+
+	/*var num=1234;	
+	var input =num.toString();
+	var output=" ";
+	for(var i=input.length-1; i>=0; i--)
+	{
+		output+=input[i];
+		
+	}
+document.write( parseInt(output));*/
+
+	
+
+
+/*function reverse(number){
+
+var input = number.toString();
+
+var output = ' ';
+
+for(var i = input.length -1; i >=0; i--){
+
+output += input[i];
+
+
+}
+return parseInt(output);
+
+
+}
+document.write(reverse(1234));*/
+
+
+/*function cToF(celsius)   
+{  
+  var cTemp = celsius;  
+  var cToFahr = cTemp * 9 / 5 + 32;  
+  var message = cTemp+'\xB0C is ' + cToFahr + ' \xB0F.';  
+    document.write(message);  
+}  
+  
+function fToC(fahrenheit)   
+{  
+  var fTemp = fahrenheit;  
+  var fToCel = (fTemp - 32) * 5 / 9;  
+  var message = fTemp+'\xB0F is ' + fToCel + '\xB0C.';  
+    document.write(message);  
+}   
+cToF(60);  
+fToC(45);  */
+
+// Write a JavaScript function that checks whether a passed string is palindrome or not?   
+  
+/*function check_Palindrome(str_entry){  
+// Change the string into lower case and remove  all non-alphanumeric characters  
+   var cstr = str_entry.toLowerCase().replace(/[^a-zA-Z0-9]+/g,'');  
+    var ccount = 0;  
+// Check whether the string is empty or not  
+    if(cstr==="") {  
+        alert("Nothing found!");  
+        return false;  
+    }  
+// Check if the length of the string is even or odd   
+    if ((cstr.length) % 2 === 0) {  
+        ccount = (cstr.length) / 2;  
+    } else {  
+// If the length of the string is 1 then it becomes a palindrome  
+        if (cstr.length === 1) {  
+            alert("Entry is a palindrome.");  
+            return true;  
+        } else {  
+// If the length of the string is odd ignore middle character  
+            ccount = (cstr.length - 1) / 2;  
+        }  
+    }  
+// Loop through to check the first character to the last character and then move next  
+    for (var x = 0; x < ccount; x++) {  
+// Compare characters and drop them if they do not match   
+        if (cstr[x] != cstr.slice(-1-x)[0]) {  
+            alert("Entry is not a palindrome.");  
+            return false;  
+        }  
+    }  
+    alert("The entry is a palindrome.");  
+    return true;  
+}  
+check_Palindrome('madam');  
+check_Palindrome('nurses run');  
+check_Palindrome('fox'); */ 
+
+
+/*function palindrome(a)
+{
+	var input=a.toLowerCase();
+	var len=input.length;
+	var output="";
+	for(var i=len-1;i>=0;i--)
+	{
+	output+=input[i]
+	}
+	if(input=="")
+	{
+		return "Enter the string"
+	}
+	if(input===output)
+	{
+	return 	"palindrome"
+	}
+	else{
+	return 	"not palindrome";
+	}
+	
+
+}
+document.write(palindrome(""))*/
+
+
+/*function palindrome(num)
+{	var input=num.toString();
+ var output= input.split("").reverse().join("")
+	
+ if(input==output)
+	{
+	return 	"palindrome"
+	}
+	else{
+	return 	"not palindrome";
+	}
+
+}
+document.write(palindrome(121))*/
+/*var combo = str.toLowerCase();
+var arr = combo.split('');
+document.write(arr+', ');
+document.write("<br/>");
+for(var i = 0; i < arr.length; i++){
+document.write(arr[i]+ ', ' );
+document.write("<br/>");
+for(var j = 0; j < arr.length; j++){
+document.write(arr[j]+ ', ' );
+
+}
+
+}*/
+/*function alphOrder (word) {
+var abc = "abcdefghijklmnopqrstuvwxyz";
+var abcWord="";
+for (var i = 0; i < abc.length; i++) {
+for (var b = 0; b < word.length; b++) {
+if (abc[i]===word[b]) {
+abcWord = abcWord+word[b];
+}
+};
+};
+return abcWord;
+}
+document.write(alphOrder ('mebdt'));*/
+
+
+
+/*function combinacion(str){
+var combo = str.toLowerCase();
+var arr = combo.split('');
+
+
+for(var i = 0; i < arr.length; i++){
+for(var j = 0; j < arr.length; j++){
+
+
+document.write(arr[i]+arr[j] + ', ' );
+}
+
+
+}
+document.write(arr.reverse().join(''));
+
+}
+var str = combinacion(prompt("word: ", "here"));
+/*var a ="comb";
+var comb = "";
+for (var b = 0; b < a.length; b++) {
+comb=comb+a[b];
+document.write(comb + "<br/>");
+
+}*/
+
+
+
+		
+
+/*var a
+a
+=
+3*/
+
+/*var s = "global";
+function f() {
+document.write(s); 
+var scope = "local"; 
+document.write(scope); 
+}
+
+f();*/
+
+/*var num = Math.ceil(Math.random() * 10);  
+ var gnum = prompt('Guess the number between 1 and 10 inclusive');  
+ if (gnum == num)  
+   alert('Matched');  
+  else  
+   alert('Not matched, the number was ' + num);*/
+
+/*var today=new Date();
+cams=new Date (today.getFullYear(),11, 25);
+if (today.getMonth()==11&& today.getDate()>25)
+{
+	cams.setFullYear(cams.getFullYear()+1);
+}
+var one_day=1000*60*60*24;
+document.write(Math.ceil((cams.getTime()-today.getTime())/one_day));*/
+
+
+
+
+ /* var today=new Date();  
+var cmas=new Date(today.getFullYear(), 11, 25); 
+
+
+if (today.getMonth()==11 && today.getDate()>25)   
+{  
+cmas.setFullYear(cmas.getFullYear()+1);   
+}    
+var one_day=1000*60*60*24;  
+document.write(Math.ceil((cmas.getTime()-today.getTime())/(one_day))+  
+" days left until Christmas!"); */   
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

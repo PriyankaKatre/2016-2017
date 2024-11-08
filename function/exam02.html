@@ -1,0 +1,36 @@
+<html>
+	<head>
+
+	</head>
+	<body>
+		<script>
+
+//exercise 3
+			(function(){
+				var employees=[{hello:function(){
+					console.log("I work AT IBM");
+				}}];
+				for(var i=0; i<employees.length; ++i)
+				{
+					//i work at IBM
+					employees[i].hello();
+				}
+			}());*/
+			//another way
+			/*var emp=function(){};
+			emp.prototype.hello=function(){
+				console.log("I work AT IBM");
+			};
+			var employees=[new emp(),new emp(),new emp()];
+			for(var i=0; i<employees.length; ++i)
+				{
+					//i work at IBM
+					employees[i].hello();
+				}
+
+
+		</script>
+	</body>
+
+
+</html>

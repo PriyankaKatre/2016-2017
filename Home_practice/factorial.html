@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+
+var exponent = function(a, n)   
+{  
+   if (n === 0)   
+   {  
+    return 1;  
+    }  
+  else   
+  {  
+    return a * exponent(a, n-1);  
+  }  
+};  
+  
+document.write(exponent(4, 3));  
+
+
+
+
+
+var array_sum = function(my_array) {  
+  if (my_array.length === 1) {  
+    return my_array[0];  
+  }  
+  else {  
+    return my_array.pop() + array_sum(my_array);  
+  }  
+};  
+  
+document.write(array_sum([1,2,3,4,5,6]));  
+
+
+
+
+
+
+function factorial(n)
+{
+	if(n==0||n==1)
+		return 1;
+	else fact=n;
+	for(i=fact;i>=fact;i--)
+	{
+		return fact=n*factorial(n-1);
+	}
+}
+
+document.write ( factorial(2));
+
+
+
+
+
+
+ 
+  if (end_num - start_num === 2)   
+  {  
+    return [start_num + 1];  
+  }   
+  else   
+  {  
+    var list = range(start_num, end_num - 1);  
+    list.push(end_num - 1);  
+    return list;  
+  }  
+};  
+  
+document.write(range(2,9)); */
+	</script>
+</head>
+<body>
+
+</body>
+</html>

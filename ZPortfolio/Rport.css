@@ -1,0 +1,137 @@
+body { background-image: url(Images/backgroundimg.jpg); background-repeat:repeat;}
+#page { width: 65%; margin: auto;}
+#clear { clear: both;}
+p { color: maroon; font-size: 1.2em; font-family: arial;}
+
+/* Header */
+
+#header img { width: 50%;}
+#header a img {width: 10%;}
+
+/* Menubar */
+
+/* Menubar has a seperate stylesheet - refer to style.css */
+
+/* Main Content */
+
+/* Content on all pages */
+.content { width: 100%;}
+
+/* Index Page */
+
+#mywork { margin-top: 3%; font-family: arial;}
+#mywork p { font-family: arial; display: inline-block; float: right; border: 15px solid transparent; border-radius: 5px; box-shadow: 0px 0px 30px grey;}
+#mywork p>a {text-decoration: none; padding: 10px; color: #333;}
+#mywork #img01, #img02, #img04, #img06 { margin-left: 8.3%; margin-bottom: 3%;}
+#mywork #img01, #img02, #img04, #img06 { background-repeat: no-repeat; background-size: 200px 200px; height: 200px; width: 200px; display: block; float: left;
+    box-shadow: 20px 20px 30px grey; border-radius: 30px;}
+#mywork #img01 { background-image: url("Images/Train2Secure.jpg");}
+#mywork #img02 { background-image: url("Images/InfonexSolution.jpg");}
+#mywork #img04 { background-image: url("Images/TUI.jpg");}
+#mywork #img06 { background-image: url("Images/ATH.jpg");}
+
+
+/* Index, About Me & Contact Me Page */
+
+#textcontent { margin-top: 5%; position: relative; width: 96%; padding: 2%; box-shadow: 0 0 30px grey; border-radius: 30px;}
+#textcontent:hover { background-color: #F5F5F5;}
+#textcontent span { display: inline; font-family: arial; font-size:1.5em;}
+#text .h1 { font-family: arial; margin-right: 1%; margin-left: 1%; padding: 0% 0% 0% 0%; font-size: 26px; color: #353535;}
+#text .h2 { font-family: arial; margin-right: 1%; margin-left: 1%; padding: 0% 0% 0% 0%; font-size: 23px; color: #353535;}
+#text span {float: right; padding: 0 4% 2% 0;}
+#text span>a {color: #333; font-size: 18px; font-family: arial; text-decoration: none;}
+#text span>a:hover {font-size: 16px; text-decoration: underline;}
+
+/* Index & Contact Me Page */
+
+#recentwork { margin-top: 5%; font-family: arial;}
+#recentwork h3 { font-family: arial; float:left; width:30%; margin-left:5%;}
+#recentwork div { margin-bottom: 5%; }
+#recentwork span { display: inline; color: maroon; font-size: 1.2em; font-family: arial; float:left; width:30%; margin-left:5%;}
+#recentwork p { float: right; margin-right: 10%; border: 15px solid transparent; border-radius: 5px; box-shadow: 0px 0px 30px grey;}
+#recentwork p>a {text-decoration: none; padding: 10px; color: #333;}
+#recentwork #img03 { background-image: url("Images/YDS.jpg"); background-repeat: no-repeat; background-size: 100% 400px; height: 400px; width: 58%; display: block; float: left;
+box-shadow: 20px 20px 30px grey; border-radius: 30px;}
+
+/* Portfolio Page Content */
+
+/* Slide Show */
+#slideshow { margin-top: 5%; position: relative; width: 100%; height: 620px; box-shadow: 0 0 30px grey; border-radius: 30px;}
+#slideshow > a { position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px;}
+#slideimg { width: 100%; height: 600px; border-radius: 30px;}
+
+/* All of the Work */
+#imgcontent { margin-top: 5%;}
+#imgcontent #img1, #img2, #img3, #img4, #img5, #img6 { background-repeat: no-repeat; background-size: 200px 200px; height: 200px; width: 200px; display: block; float: left;
+    margin-left: 3%; margin-bottom: 3%; box-shadow: 20px 20px 30px grey; border-radius: 30px;}
+#imgcontent #img1:hover { background-image: none; background-color: #F5F5F5;}
+#imgcontent #img2:hover { background-image: none; background-color: #F5F5F5;}
+#imgcontent #img3:hover { background-image: none; background-color: #F5F5F5;}
+#imgcontent #img4:hover { background-image: none; background-color: #F5F5F5;}
+#imgcontent #img5:hover { background-image: none; background-color: #F5F5F5;}
+#imgcontent #img6:hover { background-image: none; background-color: #F5F5F5;}
+#imgcontent #img1 { background-image: url("Images/Train2Secure.jpg");}
+#imgcontent #img2 { background-image: url("Images/InfonexSolution.jpg");}
+#imgcontent #img3 { background-image: url("Images/YDS.jpg");}
+#imgcontent #img4 { background-image: url("Images/TUI.jpg");}
+#imgcontent #img5 { background-image: url("Images/AAAStarChemicals.jpg");}
+#imgcontent #img6 { background-image: url("Images/ATH.jpg");}
+#imgcontent #img1text, #img2text, #img3text, #img4text, #img5text, #img6text { opacity:0;}
+#imgcontent #img1:hover #img1text, #img2:hover #img2text, #img3:hover #img3text, #img4:hover #img4text, #img5:hover #img5text, #img6:hover #img6text {
+    text-align: center; opacity: 0.8; font-family: arial; font-size: 1em; margin-top: 10%; margin-right: 2%; margin-left: 2%; color: maroon;}
+
+/* Footer */
+
+#footer .lastpartleft {font-family: arial; font-size:14px; color:black ; width:50%; float:left; display:block;padding:4% 0 1% 0%;}
+#footer .lastpartleft a {color: black; text-decoration: underline;}
+#footer .lastpartright {font-family: arial; font-size:14px; color:black; width:50%; float:left; display:block; padding:4% 0 1% 0%;}
+#footer .lastpartright span {margin: 0 4% 0 4%;}
+#footer .lastpartright a {color: black; text-decoration: none;}
+
+
+/* Responsive */
+
+@media only screen and (max-width: 1410px) {
+    #page { width: 78%;}
+    #footer .lastpartright span{margin: 0 3% 0 3%;}
+}
+
+@media (max-width: 895px){
+    #page {width: 95%;}
+    #footer .lastpartright span{margin: 0 3% 0 3%;}
+}
+
+@media (max-width: 845px) {
+    #menubar .menubar li { width: 100%; margin-top: 2%;}
+    #imgcontent div { margin-left: 4%; margin-bottom: 5%;}
+    #slideshow {display: none;}
+    #page { width: 95%;}
+    #footer .lastpartright span{margin: 0 3% 0 3%;}
+}
+
+@media (max-width: 780px) {
+    #header img { width: 85%;}
+    #header a img {width: 15%;}
+    #content {padding-top: 0%;}
+    #mywork #img01 { margin-left: 16%;}
+    #mywork #img02 { margin-left: 16%;}
+    #mywork #img04 { margin-left: 16%;}
+    #mywork #img06 { margin-left: 16%;}
+    #textcontent #text .h1 {font-family: arial; font-size: 20px;}
+    #textcontent #text .h2 {font-family: arial; font-size: 18px;}
+    #textcontent #text p {font-family: arial; font-size: 18px;}
+    #textcontent span {font-family: arial; font-size: 20px; margin-left: 1%;}
+    #imgcontent #img1 { margin-left: 16%;}
+    #imgcontent #img2 { margin-left: 16%;}
+    #imgcontent #img3 { margin-left: 16%;}
+    #imgcontent #img4 { margin-left: 16%;}
+    #imgcontent #img5 { margin-left: 16%;}
+    #imgcontent #img6 { margin-left: 16%;}
+    #recentwork span { width: 100%; margin-left: 0%;}
+    #recentwork #img03 { background-size: 100% 300px; height: 300px; width: 100%;}
+    #recentwork div { width: 100%;}
+    #footer span { width: 100%;}
+    #footer .lastpartleft {width: 100%;padding-left: 0%;}
+    #footer .lastpartright span{margin: 0 0% 0 0%;}
+    #footer .lastpartright {width: 98%; padding-top: 1%;}
+}

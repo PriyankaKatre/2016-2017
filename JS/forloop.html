@@ -1,0 +1,74 @@
+<html>
+
+<head><title>For Loop</title>
+
+<style>
+
+table { border: #000000 solid 1px; border-collapse: collapse; }
+.column-1, .column-2, .column-3 { background-color: white; width: 200px; text-align: center; }
+.column-2 { width: 50px; border: Gray solid 1px; border-top: none; border-bottom: none; }
+.raw-1 .column-1, .raw-1 .column-2, .raw-1 .column-3,  
+.raw-3 .column-1, .raw-3 .column-2, .raw-3 .column-3,  
+.raw-5 .column-1, .raw-5 .column-2, .raw-5 .column-3,  
+.raw-7 .column-1, .raw-7 .column-2, .raw-7 .column-3,  
+.raw-9 .column-1, .raw-9 .column-2, .raw-9 .column-3 
+{ background-color: gray; }
+
+</style>
+</head>
+<body>
+	<div id="multiplicationDiv"></div>
+	
+	<script type = "text/javascript">
+
+		// get multiplication div into variable
+		//var multiplicationTable = document.getElementById("multiplicationDiv");
+		
+		// ask for multiplicaiton table number to multiply with
+		var tableNumber = prompt ("enter the number","");
+		
+		// check to parse integer
+		tableNumber = parseInt(tableNumber);
+
+		var index, result, openRaw, closeRaw, column1, column2, column3, raw;
+
+		// start tag of table to create table
+		var createTable = "<table>";
+		
+		// run through the multiplication table using for loop
+		for(index = 1; index <= 10; index ++)
+		{
+			// do the multiplication
+			result = tableNumber * index;
+			
+			// open tr tag
+			openRaw = "<tr class='raw-" + index + "'>";
+			console.log(openRaw)
+			// column 1 for td tag
+			column1 = "<td class='column-1'>" + tableNumber + "</td>";
+			// column 2 for td tag
+			column2 = "<td class='column-2'>" + index + "</td>";
+			// column 3 for td tag
+			column3 = "<td class='column-3'>" + result + "</td>";
+			
+			// close tr tag
+			closeRaw = "</tr>";
+			
+			// collect how html raw together
+			raw = openRaw + column1 + column2 + column3 + closeRaw;
+			
+			// add whole raw into the existing table
+			createTable = createTable + raw;
+			
+		}
+		
+		// end of the table tag
+		createTable = createTable + "</table>";
+		
+		// put into the div table to display the table
+		multiplicationDiv.innerHTML = createTable;
+						
+	</script>
+
+</body>
+</html>

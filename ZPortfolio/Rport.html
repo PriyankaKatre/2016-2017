@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Infinite Pixel</title>
+        <meta name="viewport" content="width=device-width, intial-scale=1">
+        <link rel="shortcut icon" href="Images/favicon.ico" >
+        <link rel="stylesheet" href="Rports.css" />
+        <link rel="stylesheet" type="text/css" href="Rstyle.css">
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+        <script>
+        $(function() {
+
+            $("#slideshow > a:gt(0)").hide();
+
+            setInterval(function() {
+              $('#slideshow > a:first')
+                .fadeOut(1000)
+                .next()
+                .fadeIn(1000)
+                .end()
+                .appendTo('#slideshow');
+            },  2000);
+
+        });
+        </script>
+    </head>
+
+    <body>
+
+        <div id="page">
+
+            <div id="header">
+                <a href="index.html"><img src="Images/favicon.png" /></a><img src="Images/logo.png" />
+            </div>
+
+                <div id="clear"></div>
+
+            <div class="menubar">
+              <label for="show-menu" class="show-menu">MENU <img src="Images/cmenuicon.jpg" /></label>
+              <input type="checkbox" id="show-menu" role="button">
+              <ul id="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="aboutme.html">ABOUT ME</a></li>
+                <li><a href="contactme.html">CONTACT ME</a></li>
+              </ul>
+            </div>
+
+                <div id="clear"></div>
+
+            <div id="slideshow">
+                <a href="http://www.train2secure.co.uk" target="_blank"><div>
+                    <img id="slideimg" src="images/images/image1.png">
+                </div></a>
+
+                <a href="http://www.aaastarchemicals.co.in" target="_blank"><div>
+                    <img id="slideimg" src="images/images/image1.png">
+                </div></a>
+
+                <a href="http://www.infonexsolutions.co.uk" target="_blank"><div>
+                    <img id="slideimg" src="images/images/interior.png">
+                </div></a>
+
+                <a href="http://www.ydsuk.org" target="_blank"><div>
+                    <img id="slideimg" src="images/images/interior.png">
+                </div></a>
+
+                <a href="http://www.infonexsolutions.co.uk/tui/" target="_blank"><div>
+                    <img id="slideimg" src="images/images/resort.png">
+                </div></a>
+
+                <a href="http://www.ananttextilehub.com" target="_blank"><div>
+                    <img id="slideimg" src="images/images/resort.png">
+                </div></a>
+
+            </div>
+
+                <div id="clear"></div>
+
+            <div id="imgcontent">
+                    <a href="http://www.train2secure.co.uk" target="_blank"><div id="img1"><div id="img1text"> <h3>Train 2 Secure</h3> A Leading provider of SIA training
+                    offering door supervisor, security guard CCTV and close protection courses.</div></div></a>
+
+                    <a href="http://www.ananttextilehub.com" target="_blank"><div id="img6"><div id="img6text"> <h3>Anant Textile Hub</h3> A Leading Manufacturer and Supplier of ladies wear like Leggings, Jeggings and different types of Dress Materials.</div></div></a>
+
+                    <a href="http://www.aaastarchemicals.co.in" target="_blank"><div id="img5"><div id="img5text"> <h4>AAA Star Chemicals</h4> Offering international grade Agro Chemicals, Fertilizers, Chemicals Fertilizers that are known for modulating soil nutrition...</div></div></a>
+
+                    <a href="http://www.infonexsolutions.co.uk" target="_blank"><div id="img2"><div id="img2text"> <h3>Infonex Solutions</h3> Infonex Solutions offers a call-out service for computer support to make it easier and more convenient to you.</div></div></a>
+
+                    <a href="http://www.ydsuk.org" target="_blank"><div id="img3"><div id="img3text"> <h3>Yogi Dovine Society (UK)</h3> An Organisation Pursuing The Akshar Purshotam Upasana.</div></div></a>
+
+                    <a href="http://www.infonexsolutions.co.uk/tui/" target="_blank"><div id="img4"><div id="img4text"> <h3>Mayrhofen Holidays</h3> In a magnificent position at the head of the Ziller Valley, and encircled by the spectacular scenery of the Zillertaler Alps...</div></div></a>
+            </div>
+
+                <div id="clear"></div>
+
+            <div id="footer">
+                <div class="lastpartleft">
+                    Copyright © 2014 <a href="index.html">Infinite Pixel</a>. All Rights Reserved.
+                </div>
+                 <div class="lastpartright">
+                    <span><a href="index.html">Home</a></span> |
+                    <span>Portfolio</span> |
+                    <span><a href="aboutme.html">About Me</a></span> |
+                    <span><a href="contactme.html">Contact Me</a></span>
+                </div>
+            </div>
+
+                <div id="clear"></div>
+
+        </div>
+    </body>
+</html>

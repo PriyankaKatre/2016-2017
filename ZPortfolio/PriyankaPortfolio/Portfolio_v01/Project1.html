@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" href="project1.css">
+		<link rel="stylesheet" href="style.css">
+		<script data-require="jquery@*" data-semver="3.0.0" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.js">
+		</script>
+		<script>
+			$(document).ready(function() {
+				/*$("#slide_show > a:gt(0)").hide();
+				$("#slide_show > a:first").hide("slide",{direction:"left"},5000);
+				var sc= $("#slide_show a img").size();
+				var count=2;
+				setInterval(function () {
+         		 $('#slide_show > a:nth-child(count)').show("slide", { direction: "right" }, 500);
+         		 $('#slide_show > a:nth-child(count)').hide("slide", { direction: "left" }, 500);
+
+    });*/
+
+	           $("#slide_show > a:gt(0)").hide();
+
+	            setInterval(function() {
+	              $('#slide_show > a:first')
+	                .fadeOut(1000)
+	                .next()
+	                .fadeIn(1000)
+	                .end()
+	                .appendTo('#slide_show');
+	            },  2000);
+
+	        });
+			</script>
+		<script src="index.js"></script>
+</head>
+	<body id="body_pat" class="red" >
+		<div class="wrapper" >
+		<div class="container" >
+			<div id="bgborder" class="leftside">
+			<img src="images/logo15.png" alt="Logo" >
+			<!-- nav start -->
+			<nav>
+				<ul><a href="index1.html"><li>HOME</li></a>
+					<a href="#"><li>PORTFOLIO</li></a>
+					<a href="about1.html"><li>ABOUT</li></a>
+					<a href="contact1.html"><li>CONTACT</li></a>
+				</ul>
+			</nav> <!--end of nav-->
+
+				<!-- Tools start-->
+			<div id="tools">
+		        <div id="but_expand">+</div>
+		        <div id="but_collapse">-</div>
+		        <span>SKINS</span>
+		        <div class="clear"></div>
+		        <div id="toolsHolder">
+		            <div id="colors">
+		                <div id="c_red" class="selected"></div>
+		                <div id="c_blue"></div>
+		                <div id="c_green"></div>
+		                <div id="c_pink"></div>
+		                <div id="c_orange"></div>
+		                <div id="c_gray"></div>
+		            </div>
+		            <div id="patterns">
+		                <div id="pat_1" class="selected"></div>
+		                <div id="pat_2"></div>
+		                <div id="pat_3"></div>
+		                <div id="pat_4"></div>
+		                <div id="pat_5"></div>
+		            </div>
+		        </div>
+   			 </div><!-- end div #tools -->
+
+			<div class="maincontent">
+				<span id="work"><img src="images/work.png" alt="Work"></span>
+				<div id="slide_show">
+					<a href="C:\Users\DeeKay-pc\Desktop\Coding\Pooja\SPInterior_v0.2\index.html">
+					<img id="slideshow" src="images\images\interior.png" alt=""></a>
+					<a href="H:\COADING\Coding\Talkharrow_2\index.html"><img id="slideshow" src="images\images\image1.png" alt=""></a>
+					<a href="H:\COADING\Coding\YDS CLASS\website\Mostra\H_home.html"><img src="images\images\MOSTRA1.png" alt=""></a>
+					<a href="H:\COADING\Coding\YDS CLASS\website\WEB\resort.html"><img src="images\images\resort.png" alt=""></a>
+				</div>
+
+				<!--<div id="images">
+					 <a href="H:\COADING\Coding\Talkharrow_2\index.html" target="_blank"><div id="img1"><div id="img1text"> <h3>Talk Harrow</h3>Website for helping people who are new in London and looking for English courses.</div></div></a>
+					 <a href=href="H:\COADING\Coding\YDS CLASS\website\Mostra\H_home.html" target="_blank"><div id="img2"><div id="img2text"> <h3>Talk Harrow</h3>Website for helping people who are new in London and looking for English courses.</div></div></a>
+					 <a href="H:\COADING\Coding\YDS CLASS\website\WEB\resort.html" target="_blank"><div id="img3"><div id="img3text"> <h3>Talk Harrow</h3>Website for helping people who are new in London and looking for English courses.</div></div></a>
+				</div>--><!-- end images -->
+			</div><!-- end div maincontent -->
+
+   			<div class="footer">
+
+   				<ul>
+   					<li class=""><a href="#">copyright &copy 2016</a></li>
+   					<li class=""><a href="#">HOME</a></li>
+   					<li><a href="project1.html">PORTFOLIO</a></li>
+   					<li><a href="about1.html">ABOUT</a></li>
+   					<li><a href="contact1.html">CONTACT</a></li>
+   				</ul>
+   			</div><!-- end footer -->
+   			</div><!-- end red -->
+
+		</div><!-- end container -->
+		</div><!-- end div wrapper -->
+		<script src="project.js"></script>
+	</body>
+</html>

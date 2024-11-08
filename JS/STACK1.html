@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>STACKING AN ELEMENT</title>
+</head>
+<body>
+<form>
+	<fieldset>
+		<legend>Stacking</legend>
+		<input class ="txt" type="text" id="stackTxt1">
+		<br>
+		<input class ="txt" type="text" id="stackTxt2">
+		<br>
+		<input class ="txt" type="text" id="stackTxt3">
+		<br>
+		<input class ="txt" type="text" id="stackTxt4">
+		<br>
+		<input class ="txt" type="text" id="stackTxt5">
+		<br>
+		<br>
+		<label> Enter a number: </label>
+		<input type="text" Name="inputText" id="inputText" value = "Hello">
+		<br>
+		<br>
+		<input type="button" Name="PushButton" value="push" onclick="push()">
+		<input type="button" Name="PopButton" value="pop" onclick="pop()">
+	</fieldset>
+
+</form>
+
+
+</body>
+<script type="text/javascript">
+
+var array1=[];
+
+function push()
+{
+console.log("before entering the if ",array1)
+    if(array1.length<5)
+    {
+
+    	array1[array1.length]=inputText.value; // assinged input value to the array element
+		document.getElementById("stackTxt"+array1.length).value=array1[array1.length-1] // assined value of array element to the the text element of HTML
+  		console.log(array1)  // to display array in console
+  		console.log(array1.length) // to display array lenght in console
+   }
+
+
+   else
+   	{
+	//array1.shift()
+
+		  	for (i=0; i<array1.length-1;i++) // assining the 2nd value to the 1st element and so on
+	   	   	{ 	array1[i]=array1[i+1]; }
+
+              array1[array1.length-1]=inputText.value // asssing the inputed value to the last element of the array
+
+
+	   	 	for (i=1;i<=array1.length;i++)  // displaying the value of array into the HTML text elements.
+	   	   	{
+	   	   		document.getElementById("stackTxt"+i).value=array1[i-1];
+
+	   	    }
+	   	    console.log("after 5th element",array1);
+
+	   }
+
+	}
+
+	function pop()
+	{
+		//	array1.shift();
+
+			for(i=1;i<=array1.length;i++)
+			{
+				document.getElementById("stackTxt"+i).value=""
+
+			}
+
+			for (i=0; i<array1.length;i++)
+	   	   	{
+	   	   		array1[i]=array1[i+1];
+
+	   	   	}
+	   	   	array1[length-1]=inputText.value
+
+			for (i=1;i<array1.length;i++)
+	   	   	{
+	   	   		document.getElementById("stackTxt"+i).value=array1[i-1];
+
+	   	    }
+
+  			console.log("poparray",array1);
+
+	}
+</script>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function person()
+		{
+			this.name;
+			this.hitpoints=100;
+
+			this.attack=function (opponent)
+			{
+				opponent.hitpoints-=10;
+				alert(this.name+" just hit"+opponent.name)
+			}
+		}
+		var p1=new person();
+		var p2=new person();
+
+		p1.name="Ram";
+		p2.name="Lakshaman";
+
+		p2.attack(p1);
+		alert(p1.name+" has"+p1.hitpoints+"hit points left");
+		person.prototype.heal=function heal(targetPlayer)
+		{
+			targetPlayer.hitpoints+=5;
+
+		}
+p2.heal(p1);
+alert(p2.name+"has"+p2.hitpoints+"hit points left");
+alert(p1.name+"has"+p1.hitpoints+"hit points left");
+person.prototype.energy=200;
+alert(p1.energy);
+alert(p2.energy);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

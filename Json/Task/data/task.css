@@ -1,0 +1,109 @@
+body {overflow-x:hidden;}
+/*Style for header*/
+.head {background:#ccc linear-gradient(#ccc,#595c60); padding:10px 0px;}
+.container-fluid {overflow-x:hidden;}
+.container-fluid ul,header { display:inline-block; }
+.container-fluid ul li { opacity:.8; margin-right:10px; float:left; list-style-type:none;}
+.container-fluid ul li:first-child {  border:8px solid red; border-radius:40px;  }
+.container-fluid ul li:nth-child(2)  { border:8px solid yellow; border-radius:40px; }
+.container-fluid ul li:last-child { border:8px solid green; border-radius:40px; }
+.container-fluid header { text-align:center; font-size:14pt; margin-top:-40px; color:#000;}
+.container {border:1px solid; }
+
+/* Style for section left maincontent*/
+section { margin-top:25px}
+section .row .left { margin-left:20px;}
+section .row .left .account { color:#adafb2; font-size:14pt;}
+section .row .left .companyName { color:#000; font-size:22pt; margin-top:10px }
+section .row .left .phone { margin-top:30px; font-size:14pt;}
+section .row .left .SC122323XE { float:left; margin-top:22px; color:#6699ff; font-size:14pt; border-bottom:2px solid #6699ff;}
+.clear { clear:both }
+section .row .left .NP,section .row .left .net_position { font-size:14pt; margin-top:20px; float:left}
+section .row .left .Dealer,section .row .left .last_login{ margin-top:55px; font-size:14pt; color:#ccc }
+section .row .left .Dealer,section .row .left .last_login,section { margin-left:-15px; }
+section .row .left .Dealer_name,section .row .left .last_login_time { margin-bottom:45px;margin-left:-20px; font-size:13pt; }
+section .row .left .Last_Notes { margin-top:55px; font-size:14pt; color:#ccc  }
+section .row .left .notes { margin-left:-30px;  font-size:13pt;}
+section .row .left .author,.author1 { margin-left:-30px }
+section .row .left .notes_date1,.author1,.text1 { margin-top:20px; }
+
+/* Style for section middle maincontent*/
+section .row .middle {margin-left:10px}
+section .row .middle .main_contact { margin-top:100px; color:#adafb2; font-size:14pt; }
+section .row .middle .main_contact_name { margin-top:32px; font-size:14pt; color:#000000 }
+section .row .middle .main_contact_position { font-size:12pt; margin-top:5px; }
+section .row .middle .last_call { margin-left:2px; margin-top:70px; color:#adafb2; font-size:14pt;}
+section .row .middle .last_call_time { margin-left:-10px;  font-size:13pt}
+section .row .middle .contact { font-size:13pt; margin-left:-30px}
+
+/* Style for section right maincontent*/
+
+section .row .right { font-size:14pt ;  }
+section .row .right .activetrade {  color:#adafb2; margin-left:130px; }
+section .row .right .id {font-size:14pt; margin-left:130px;}
+section .row .right .Buy { margin-top:70px;  border-bottom:1px solid #ccc; margin-left:100px;}
+section .row .right .buy {  color:#adafb2;  }
+section .row .right .buy_amount { margin-left:-1.2em;  }
+section .row .right .buy_currency { margin-left:-50px; }
+section .row .right .Sell {  margin-top:10px; border-bottom:1px solid #ccc; margin-left:100px;}
+section .row .right .sell {  color:#adafb2;  }
+section .row .right .sell_amount { margin-left:-20px;  }
+section .row .right .sell_currency { margin-left:-50px; }
+section .row .right .margin { color:#adafb2; margin-bottom:60px; margin-left:100px;}
+section .row .right .margin,.margin_percent { margin-top:10px;  margin-bottom:60px; }
+section .row .right .margin_percent { margin-left:180px; margin-top:-85px}
+section .row .right .Dealer_right { margin-left:130px; color:#adafb2; }
+section .row .right .Dealer_right_name {  margin-left:130px; }
+
+/* Style for buttons*/
+
+footer { position:relative; margin-top:30px; font-size:14pt; background-color:#cccccc; padding:15px; height:70px;}
+footer .btn1 {width:200px; padding:10px; position:absolute; left:20%; background-color:#66cc66; border:1px solid #66cc66; border-radius:5px; color:#fff; }
+footer .btn2 {width:200px; padding:10px;   background-color:#6699ff; border:1px solid #66cc66; border-radius:5px; color:#fff; }
+footer .btn3 {width:200px; padding:10px; margin-left:10em;  background-color:#cc6633; border:1px solid #66cc66; border-radius:5px; color:#fff;}
+
+/*media query*/
+
+@media (max-width:1200px)
+{
+	section .row .left .companyName {  width:200%}
+	section .row .middle .main_contact_position {  width:200% }
+	section .row .left .author,.author1 { margin-left:-30px; width:200% }
+	section .row .left .text1,.text { margin-left:-10px; width:200%}
+
+	section .row .middle .col-sm-3 { margin-left:50px}
+	section .row .middle .last_call_time {  width:150% }
+	section .row .middle .contact {margin-left:-10px ;width:200% }
+
+	section .row .right .buy_currency { margin-left:-.8em }
+	section .row .right .sell_currency { margin-left:-.8em }
+}
+@media (max-width:1140px) {
+	footer .btn2 { margin-left:20px; }
+
+}
+@media (max-width:1024px) {
+	footer .btn1 { margin-left:-10%; }
+
+}
+@media (max-width:991px) {
+	.container {width:100%; border:1px solid; }
+	section .row .left .companyName {  font-size:16pt;width:150%}
+	section .row .right .activetrade { width:50% }
+	section .row .right .buy_currency { width:10%  }
+	section .row .right .sell_currency { width:10% }
+	section .row .right .buy_amount { width:50%  }
+	section .row .right .sell_amount {width:50%  }
+
+	section .row .left .author,.author1 { margin-left:-10px; width:300%;}
+	section .row .left .text1,.text { margin-left:30px; width:200%;}
+	section .row .left .text1 {width:300%;  margin-left:40px;}
+	section .row .left .notes_date,.notes_date1 { width:200%; }
+
+	section .row .middle .col-sm-3 { margin-left:50px;}
+	section .row .middle .last_call_time { width:200%; }
+	section .row .middle .contact { margin-left:10px; width:300% }
+
+	footer .btn1 { margin-left:30%; }
+	footer .btn2 { margin-left:80%; }
+}

@@ -1,0 +1,21 @@
+<html>
+	<head>
+
+	</head>
+	<body>
+		<script>
+			function map(f,a){
+				var arr=[];
+				var i;
+				for(i=0;i<a.length;i++)
+				{
+					arr[i]=f(a[i]);
+
+				}
+					console.log(arr);
+			}
+var multiply=function (x){return x*x*x}
+map(multiply,[0,2,3,4,5]);
+		</script>
+	</body>
+</html>

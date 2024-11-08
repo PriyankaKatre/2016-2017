@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script data-require="jquery@*" data-semver="3.0.0" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.js">
+    </script>
+    <title>Demo</title>
+    <style>
+      a.test {
+          font-weight: bold;
+          color:pink;
+      }
+</style>
+</head>
+<body>
+   <ul>
+
+    <li id="foo1">foo</li>
+    <li id="bar1" class="test">bar</li>
+    <li id="baz1">baz</li>
+    <div class="test"></div>
+</ul>
+<div id="last"></div>
+
+    <script>
+    function equivilibrium(A)
+    {
+      var sum=A.reduce(function(a,b){
+         return  a+b;
+      },0)
+      var left=0;
+      var right;
+      for(var i=0; i<=A.length; i++)
+      {
+        right=sum-left-A[i];
+        if(right==left)
+        {
+          return 1;
+        }
+
+        left+=A[i];
+      }
+        return -1;
+    }
+console.log( equivilibrium([-1,2,3,4]));
+
+
+    </script>
+</body>
+</html>

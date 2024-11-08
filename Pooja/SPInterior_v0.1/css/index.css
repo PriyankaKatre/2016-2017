@@ -1,0 +1,57 @@
+
+.banner {
+	margin-top:-40px;
+}
+.banner img#imgleft {
+		width:4%;
+		height:4%;
+		cursor:pointer;
+		float:left;
+		position:relative;
+		top:250px;
+		margin-right:-45px;
+		z-index:100;
+}
+.banner img#imgright {
+		width:4%;
+		height:4%;
+		cursor:pointer;
+		float:right;
+		position:relative;
+		top:250px;
+		z-index:100;
+}
+.clear {
+	clear:both;
+}
+.banner .slide {
+	position:relative;
+}
+.banner .slide img {
+	width:99.6%;
+	height:500px;
+	border:2px solid grey;
+	position:absolute;
+}
+.clear {
+	clear:both;
+}
+section {
+	width:95%;
+	margin:auto;
+	color:#1a1a00;
+	margin-top:520px;
+}
+section>h3 {
+	font-size:1em;
+	}
+section>h3+p {
+	font-size:.95em;
+}
+section h4 {
+	margin-top:40px;
+	color:red;
+}
+.clear {
+	clear:both;
+}

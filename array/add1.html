@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var arr1=new Array(3);
+		for(var i=0;i<3;i++)
+		{
+			arr1[i]=new Array(5);
+		}
+		var start=11;
+		for(var i=0;i<3;i++){
+			for(var j=0;j<5;j++)
+			{
+				arr1[i][j]=start;
+				start++;
+			}
+		}
+		for(var i=0;i<3;i++){
+			for(var j=0;j<5;j++)
+			{
+				document.write(arr1[i][j]+"&emsp;"+"&emsp;")
+			}
+			document.write("<br/>")
+		}
+		document.write("<br/>")
+		document.write("&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"+")
+		document.write("<br/>")
+		document.write("<br/>")
+
+var arr2=new Array(3);
+		for(var i=0;i<3;i++)
+		{
+			arr2[i]=new Array(5);
+		}
+		
+		for(var i=0;i<3;i++){
+			for(var j=0;j<5;j++)
+			{start--;
+				arr2[i][j]=start;
+				
+			}
+		}
+		for(var i=0;i<3;i++){
+			for(var j=0;j<5;j++)
+			{
+				document.write(arr2[i][j]+"&emsp;"+"&emsp;")
+			}
+			document.write("<br/>")
+		}
+
+		document.write("<br/>")
+		document.write("&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"=")
+		document.write("<br/>")
+		document.write("<br/>")
+
+var arr3=new Array(3);
+		for(var i=0;i<3;i++)
+		{
+			arr3[i]=new Array(5);
+		}
+		
+		for(var i=0;i<3;i++){
+			for(var j=0;j<5;j++)
+			{
+				arr3[i][j]=arr1[i][j]+arr2[i][j];
+				
+			}
+		}
+		for(var i=0;i<3;i++){
+			for(var j=0;j<5;j++)
+			{
+				document.write(arr3[i][j]+"&emsp;"+"&emsp;")
+			}
+			document.write("<br/>")
+		}
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

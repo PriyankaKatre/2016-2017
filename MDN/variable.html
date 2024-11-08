@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+	<head>
+		<script>
+
+			var a;
+			console.log(a);                // logs "undefined" or "" depending on browser.
+			console.log('still going...');
+			 var y = 1;
+				 var z = 2;
+			function x() {
+				 // Throws a ReferenceError in strict mode
+
+				}
+
+				x();
+
+				console.log(y); // logs "1"
+				console.log(z); // Throws a ReferenceError: z is not defined outside x
+
+				var a = 1;
+				var	b = 2;
+
+				delete this.a; // Throws a TypeError in strict mode. Fails silently otherwise.
+				delete this.b;
+
+				console.log(a, b); // Throws a ReferenceError.
+				// The 'b' property was deleted and no longer exists.
+
+				var x = 0;
+				var y=1;
+
+				function f() {
+				  x=2 ; // x is declared locally. y is not!
+				}
+				f();
+
+				console.log(x, y); // Throws a ReferenceError in strict mode (y is not defined). 0, 1 otherwise.
+				// In non-strict mode:
+				// x is the global one as expected
+				// y leaked outside of the function, though!
+
+				function isPalindrome(str) {
+				    str = str.replace(/\W/g, '').toLowerCase();
+				    return (str == str.split('').reverse().join(''));
+				}
+
+				console.log(isPalindrome("level%"));                   // logs 'true'
+				console.log(isPalindrome("levels"));                  // logs 'false'
+				console.log(isPalindrome("A car, a man, a maraca"));  // logs 'true'
+
+				for (var i = 0; i < 5; i++) {
+					(function(x){
+						setTimeout(function() { console.log(x); }, i * 1000 );
+					})(i);
+
+				}
+
+						function makeFunc() {
+							  var name = 'Mozilla';
+							  function displayName() {
+							    alert(name);
+							  }
+							  return displayName;
+							}
+
+							var myFunc = makeFunc();
+							myFunc();
+		</script>
+	</head>
+	<body>
+		hello
+	</body>
+</html>

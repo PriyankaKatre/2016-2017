@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<style>
+			img{
+				background-color:red;
+			}
+			div{
+				color:pink
+			}
+		</style>
+		<script data-require="jquery@*" data-semver="3.0.0" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.js">
+		</script>
+		<script>
+		/*animate on click*/
+			/*$(document).ready(function(){
+				$('img').click(function(){
+					$(this).animate({'width':'1000px'},1000);
+
+			})
+			});*/
+
+		/*animate on mouseover and mouseout using json object*/
+			/*$(document).ready(function(){
+				$('img').on({
+					"mouseover":function(){
+						$(this).animate({"width":"500"},3000,'linear',callback);
+					},
+					"mouseout":function(){
+						$(this).animate({"width":"100"},3000);
+					}
+
+				});
+				function callback(){
+					alert();
+				}
+			});*/
+
+			/*animate using position property*/
+			$(document).ready(function(){
+				$('img').click(function(){
+					$(this).animate({"left":"500px"})
+							.animate({"top":"500px"})
+							.animate({"right":"50px"})
+							.animate({"top":"50px"});
+				});
+			})
+		</script>
+	</head>
+	<body>
+		<div>Priyanka</div>
+			<img style="position:absolute"src="logo1.png" alt="" width="300px" height="300px">
+	</body>
+</html>

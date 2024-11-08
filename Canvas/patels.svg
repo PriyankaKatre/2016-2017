@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Document</title>
+		<style>
+			rect{
+			fill:pink;
+			}
+		</style>
+	</head>
+	<body>
+		<svg width="300" height="500">
+			<g>
+				<rect width:"13" height="100"></rect>
+			</g>
+
+		</svg>
+
+	</body>
+</html>

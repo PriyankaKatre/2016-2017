@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+		var arr1=new Array();
+		start=1
+		for (var i=0;i<3;i++){
+			arr1[i]=start;
+			start++;
+		}
+		for (var i=0;i<3;i++){
+			document.write(arr1[i]+"&emsp;")
+		}
+		document.write("</br>")
+		document.write("+")
+		document.write("</br>")
+
+		var arr2=new Array();
+	
+		for (var i=0;i<3;i++){
+			start--;
+			arr2[i]=start;
+			}
+		for (var i=0;i<3;i++){
+			document.write(arr2[i]+"&emsp;")
+		}
+
+		document.write("</br>")
+		document.write("=")
+		document.write("</br>")
+		var arr3=new Array();
+	
+		for (var i=0;i<3;i++){
+			
+			arr3[i]=arr2[i]+arr1[i]
+			}
+		for (var i=0;i<3;i++){
+			document.write(arr3[i]+"&emsp;")
+		}
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

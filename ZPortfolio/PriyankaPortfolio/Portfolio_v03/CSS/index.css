@@ -1,0 +1,249 @@
+.container-fluid .row .rectangle {
+  background: url("../images/background.png");
+}
+.container-fluid .row .rectangle .navbar-header {
+  float: none !important;
+}
+.container-fluid .row .rectangle .navbar-header .navbar-brand {
+  padding: 20px !important;
+  width: 40% !important;
+  height: 100px;
+  background: #663333;
+  float: none !important;
+}
+.container-fluid .row .rectangle nav .navbar-nav {
+  float: none !important;
+  width: 80%;
+  margin: 20px auto !important;
+}
+.container-fluid .row .rectangle nav ul li.activetab {
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.container-fluid .row .rectangle nav ul li {
+  border-radius: 10px;
+  width: 25% !important;
+  margin: auto !important;
+}
+.container-fluid .row .rectangle nav ul li a {
+  color: #663333 !important;
+  font: bold 25px 'Oswald';
+}
+.container-fluid .row .rectangle nav ul li a:hover {
+  color: #ffffff;
+  background: #cccccc;
+  border-radius: 10px;
+}
+.container-fluid .row .rectangle .indexPage .bgimage .jumbotron {
+  background: #ffffff;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 20px !important;
+}
+.container-fluid .row .rectangle .indexPage .bgimage .jumbotron .jumbotron {
+  background-color: #333366 !important;
+  background: -webkit-linear-gradient(#333366, #999999);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#333366, #999999);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#333366, #999999);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#333366, #999999);
+  /* Standard syntax */
+  width: 100%;
+  margin: auto;
+  border: 2px solid #000;
+  padding-bottom: 40px !important;
+}
+.container-fluid .row .rectangle .indexPage .bgimage .jumbotron .jumbotron .about {
+  color: #fff;
+}
+.container-fluid .row .rectangle .indexPage .bgimage .jumbotron .jumbotron .about .maincontent h3 {
+  font: bold 50px/35px 'Oswald';
+}
+.container-fluid .row .rectangle .indexPage .bgimage .jumbotron .jumbotron .about .maincontent h4 {
+  font: normal 25px/25px 'Oswald';
+  margin-top: 20px;
+}
+.container-fluid .row .rectangle .indexPage .bgimage .jumbotron .jumbotron .about .maincontent h6 {
+  font: bold 19px/26px 'Oswald';
+}
+.container-fluid .row .rectangle .indexPage .bgimage .jumbotron .jumbotron .about .maincontent p {
+  font-size: 1.8em;
+  color: #ccc;
+  margin-top: 15px;
+}
+.container-fluid .row .rectangle .indexPage .bgimage .jumbotron .jumbotron .about .maincontent p span {
+  font-size: 45px;
+  color: #fff;
+}
+.container-fluid .row .rectangle .indexPage .bgimage .jumbotron .jumbotron .btn {
+  background: #663333 !important;
+  color: #fff;
+  border-radius: 20px !important;
+}
+.container-fluid .row .rectangle .indexPage .bgimage .jumbotron .btn {
+  margin-top: 2% !important;
+}
+.container-fluid .row .rectangle .indexPage .bgimage .jumbotron .btn-info {
+  background-color: #3c4149 !important;
+  border-color: grey !important;
+  border-radius: 20px !important;
+}
+.container-fluid .row .rectangle .indexPage .last-image {
+  margin-top: -50px;
+  width: 100%;
+}
+.container-fluid .row .rectangle .portfolio .jumbotron {
+  width: 80%;
+  margin: auto;
+  background: #ffffff;
+}
+.container-fluid .row .rectangle .portfolio .jumbotron .slideshow {
+  margin-top: 4%;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  height: 560px;
+}
+.container-fluid .row .rectangle .portfolio .jumbotron .slideshow .slideImage {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
+  width: 100%;
+  border: 2px solid #ccc;
+  padding: 0px !important;
+  border-radius: 10px;
+  height: 550px;
+}
+.container-fluid .row .rectangle .portfolio .jumbotron .images {
+  text-align: center;
+  margin: 20px auto;
+  display: block;
+}
+.container-fluid .row .rectangle .portfolio .jumbotron .images figure a {
+  border-bottom: 2px solid grey;
+}
+.container-fluid .row .rectangle .portfolio .jumbotron .images figure a img {
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  height: 250px ! important;
+}
+.container-fluid .row .rectangle .portfolio .jumbotron .images figure figcaption {
+  width: 80%;
+  margin: 4% auto;
+  color: #3c4149;
+}
+.container-fluid .row .rectangle .portfolio .jumbotron .btn {
+  margin-top: 2% !important;
+}
+.container-fluid .row .rectangle .portfolio .jumbotron .btn-info {
+  background-color: #3c4149 !important;
+  border-color: grey !important;
+  border-radius: 20px !important;
+}
+.container-fluid .row .rectangle .portfolio .last-image {
+  margin-top: -50px;
+  width: 100%;
+}
+.container-fluid .row .rectangle .about .jumbotron {
+  width: 80%;
+  margin: auto;
+  background: #fff;
+}
+.container-fluid .row .rectangle .about .jumbotron .aboutcontant {
+  margin-left: 5%;
+}
+.container-fluid .row .rectangle .about .jumbotron .aboutcontant h3 {
+  color: #663333;
+  font-size: 30pt;
+}
+.container-fluid .row .rectangle .about .jumbotron .aboutcontant ul {
+  color: #999999;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+.container-fluid .row .rectangle .about .jumbotron .aboutcontant ul li {
+  font-size: 18px;
+  line-height: 30px;
+}
+.container-fluid .row .rectangle .about .jumbotron .btn {
+  margin-top: 2% !important;
+}
+.container-fluid .row .rectangle .about .jumbotron .btn-info {
+  background-color: #3c4149 !important;
+  border-color: grey !important;
+  border-radius: 20px !important;
+}
+.container-fluid .row .rectangle .about .last-image {
+  width: 100%;
+  margin-top: -50px;
+}
+.container-fluid .row .rectangle .contact .jumbotron {
+  width: 80%;
+  margin: auto;
+  background: #fff;
+}
+.container-fluid .row .rectangle .contact .jumbotron .contactInfo {
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+.container-fluid .row .rectangle .contact .jumbotron .contactInfo h3 {
+  color: #663333;
+  font-size: 30pt;
+}
+.container-fluid .row .rectangle .contact .jumbotron .contactInfo h4 {
+  color: #999999;
+}
+.container-fluid .row .rectangle .contact .jumbotron .btn {
+  margin-top: 2% !important;
+}
+.container-fluid .row .rectangle .contact .jumbotron .btn-info {
+  background-color: #3c4149 !important;
+  border-color: grey !important;
+  border-radius: 20px !important;
+}
+.container-fluid .row .rectangle .contact .last-image {
+  width: 100%;
+  margin-top: -50px;
+}
+.container-fluid .row .rectangle .footer .jumbotron {
+  width: 80%;
+  margin: auto;
+}
+.container-fluid .row .rectangle .footer .jumbotron ul li a {
+  color: #999;
+  font-size: 12px;
+  border-right: 1px solid #999;
+  line-height: 3px;
+}
+.container-fluid .row .rectangle .footer .jumbotron ul li:last-child a {
+  border: none;
+}
+@media only screen and (max-width: 768px) {
+  .rectangle nav ul {
+    margin-top: 1px ! important;
+  }
+  .rectangle nav ul li {
+    text-align: center;
+  }
+  .rectangle .navbar-header .navbar-toggle {
+    margin-top: 30px;
+    background-color: #003366 ! important;
+  }
+  .rectangle .navbar-header .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+  }
+  .rectangle .footer ul {
+    position: relative;
+    margin-bottom: -150px ! important;
+    margin-left: 20px;
+  }
+  .rectangle .footer ul li a {
+    padding: 5px ! important;
+    float: left ! important;
+    color: #fff;
+    font-size: 10px ! important;
+  }
+}

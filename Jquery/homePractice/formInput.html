@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<script data-require="jquery@*" data-semver="3.0.0" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.js">
+		</script>
+		<script>
+		$(document).ready(function(){
+			/*$('#button').click(function(){
+				SkillsCities('Skills');
+
+			});*/
+			/*$('#button1').click(function(){
+				SkillsCities('Cities');
+			});*/
+
+			$('input[name="Skills"]').click(function(){
+				SkillsCities('Skills');
+			});
+			var SkillsCities=function(Group){
+			var result=$('input[name="'+Group+'"]:checked');
+				if(result.length>0)
+				{
+					var resultstr=result.length +" checkbox </br>";
+					result.each(function(){
+						resultstr += $(this).val()+"</br>";
+					});
+					$('#out'+Group).html(resultstr);
+				}
+				else{
+					$('#out'+Group).html("no checkbox");
+				}
+			};
+		});
+		</script>
+
+	</head>
+	<body>
+	SKILLS:
+		<input type="checkbox" name="Skills" value="HTML">HTML
+		<input type="checkbox" name="Skills" value="CSS">CSS
+		<input type="checkbox" name="Skills" value="JavaScript">JavaScript
+		<input type="checkbox" name="Skills" value="JQuery">JQuery
+		</br>
+		</br>
+
+	Cities:
+		<input type="checkbox" name="Cities" value="India">India
+		<input type="checkbox" name="Cities" value="UK">UK
+		<input type="checkbox" name="Cities" value="US">US
+		<input type="checkbox" name="Cities" value="Japan">Japan
+		</br>
+		</br>
+		<input id="button" type="Button" name="Butt" value="Submit">
+		<input id="button1" type="Button" name="Butt1" value="Submit1">
+		</br>
+		</br>
+
+		<div id="outSkills">
+
+		</div>
+		<div id="outCities">
+
+		</div>
+
+	</body>
+</html>

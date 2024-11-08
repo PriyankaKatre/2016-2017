@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p>Test javascript</p>
+	<input type="text" id="item" value="">
+	<input type="Button" id="button" value="Add+">
+	<div id="output"> 
+	Enter your Item <br>
+	<ol id="mylist"></ol></div>
+	<form>
+	<select  onchange="change(this,'style.backgroundColor')">
+	<option value="red">Red</option>
+	<option value="blue">Blue</option>
+	</select>
+	<select  onchange="change(this,'style.color')">
+	<option value="red">Red</option>
+	<option value="blue">Blue</option>
+		
+	</select>
+
+	<select  onchange="change(this,'style.fontSize')">
+	<option value="10px">10</option>
+	<option value="20px">20</option>
+		
+	</select>
+</form>
+
+	<script>
+	console.log(document.body.style);
+	function change(a,b){
+			eval('document.body.'+b+'="'+a.options[a.selectedIndex].value+'"');
+	}
+	
+	var a = document.getElementById("button");
+	var b = document.getElementById("item");
+	var c = document.getElementById("mylist");
+	a.addEventListener('click',myFunction, false)
+
+	function myFunction(){
+		var mylst=document.createElement('li');
+		mylst.onclick=function(){
+			console.log(this.parentElement);
+			this.parentElement.removeChild(this);
+			//this.setAttribute("style","color:red;background:green");
+		}
+		mylst.appendChild(document.createTextNode(b.value));
+
+		c.appendChild(mylst);
+		document.getElementById("item").value;
+
+
+	}
+
+
+
+</script>
+</body>
+</html>

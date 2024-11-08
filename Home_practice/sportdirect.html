@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+	<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script>
+		$(document).ready(function(){
+			$("button").find("i").removeClass("fa fa-long-arrow-right");
+
+
+
+			$("button").hover( function(){
+				/*$(this).removeClass("btn2");
+				$(this).addClass("btn2");*/
+				var index = $(this).index();
+				var btnWidth= ["70px", "150px", "70px", "70px"];
+				var positionLeft= ["20px", "83px", "225px", "290px"]
+				$(".ani").animate({"width":btnWidth[index],"left":positionLeft[index]});
+
+			});
+
+
+
+			$("button").click(function(){
+				$("button").removeClass("btn1")
+				$(this).addClass("btn1")
+				$("button").find("i").removeClass("fa fa-long-arrow-right")
+				$(this).find("i").addClass("fa fa-long-arrow-right")
+			});
+
+
+		});
+
+	</script>
+	<style>
+		.btn { background-color:pink; margin-left:20px;}
+		.btn1 {  background-color:red;}
+		.fa-long-arrow-right { color:green }
+		.ani {  position: absolute;
+			    background-color: #abc;
+			    left: 3px;
+			    top:-1px;
+
+			    height: 30px;
+			    margin: 5px;
+			    z-index:-1
+			    }
+
+	</style>
+
+	</head>
+	<body>
+
+		<button class="btn btn1 ">btn1 <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+		<button class="btn" >btn2234567890- <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+		<button class="btn" >btn3 <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+		<button class="btn" >btn4<i class="fa fa-long-arrow-right" aria-hidden="true"> </i></button>
+		<div class="ani"></div>
+
+	</body>
+</html>

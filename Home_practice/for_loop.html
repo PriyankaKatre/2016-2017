@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+/*   for (lc = 0; lc <=5; lc++) {
+      document.write(lc);
+  }
+}*/
+
+/*for(var i=0; i<5*3; i++){
+ document.write( Math.floor(i/3) );
+  }*/
+
+//BINARY TRIANGLE//
+ 
+ /*for(var i=1;i<=5;i++)
+  {
+  	for(var j=1;j<=i;j++)
+  	{
+  		if((i+j)%2==0)
+  		{
+  			document.write(1)
+  		}
+  		else
+  		{
+  			document.write(0)	
+  		}
+  	}
+    document.write("<br/>");  
+  }*/
+
+//Pascal triangle//
+
+/*for(var i=0;i<=5;i++)
+{
+for(var j=0;j<5-i; j++)
+{
+	document.write("&nbsp");
+
+}
+var n=1;
+for (var k = 0; k<=i; k++) {
+document.write(n + " ");
+n=n*(i-k)/(k+1);
+}
+document.write("<br/>")
+}*/
+
+/*var space=5;
+for(var loop=1; loop<=5;loop++)
+{
+	num=loop;
+	for(var s=1;s<=space;s++)
+	{
+		document.write("*");
+	}
+	space--;
+	for(var s=1;s<=loop;s++)
+	{
+		document.write(num + " ");
+		num++;
+	}
+	num--;
+	num--;
+	for(var s=1;s<loop;s++)
+	{
+		document.write(num + " ");
+		num--
+	}
+	document.write("<br/>");
+}*/
+
+
+
+/*var space=5;
+var a=1;
+for(var loop=1; loop<=5;loop++)
+{
+	num=loop;
+	for(var s=1;s<=space;s++)
+	{
+		document.write("&nbsp");
+	}
+	space--;
+	
+	for(var s=1;s<=loop;s++)
+	{
+		document.write(" "+a+ " ");
+		a++;
+	
+	}
+	
+	document.write("<br/>");
+}*/
+
+
+/*for(var i=1;i<=5;i++)
+{
+	for(j=1;j<=5-i;j++)
+	{
+		document.write("&nbsp");
+	}
+	for(k=1;k<=i;k++)
+	{
+		document.write("*");
+	}
+	document.write("<br>");
+
+}*/
+
+/*for(var i=1;i<=5;i++)
+{ var a=5-i;
+	for(var j=1;j<=a;j++)
+	{
+	document.write("&nbsp"+" ");
+	}
+	
+	for(var k=1;k<=i;k++)
+	{
+		document.write("*");
+	}
+	document.write("<br>");
+
+}*/
+/*for(var i=1;i<=5;i++)
+{ 
+	for(var k=5;k>=i;k--)
+	{
+		document.write("*");
+	}
+	document.write("<br>");
+
+}*/
+
+/*var no=5;
+for(var i=1; i<=(no/2)+1;i++)
+{
+for(var j=(no/2)+1;j>=i;j--)
+{
+	document.write("&nbsp"+" ");
+}
+
+for(var k=1;k<=i;k++)
+{
+
+	document.write("*"+" ");
+}
+for(var l)
+document.write("</br>")
+
+}*/
+ /*ar a = [1, 2, 3], b = [101, 2, 1, 10];
+var c = a.concat(b);
+var d = c.filter(function (item, pos) {return c.indexOf(item) == pos});
+document.write();*/
+/*function ConcatArrayDemo(){
+   var a, b, c, d;
+   a = new Array(1,2,3);
+   b = "JScript";
+   c = new Array(42, "VBScript");
+   d = a.concat(b, c);
+   //Returns the array [1, 2, 3, "JScript", 42, "VBScript"]
+   return(d);
+}
+document.write(ConcatArrayDemo());*/
+
+
+
+//merging two arrays//
+
+/*function Array()
+{
+	var a=[1,2,3];
+	var b=[2,4,5];
+	var c=a.concat(b);
+	var d=c.filter (function(val, index, Array){return c.indexOf(val)==index});
+	return(d); 
+}
+document.write(Array());*/
+
+
+
+
+
+//Combining two arrays//
+
+/*var arr1=[1,2,3,6,8];
+var arr2=[4,7,5,10,9];
+var arr3 =[10];
+var j=0;
+for(var i=0;i<10;i++)
+{
+	
+if(i>4)
+
+	{
+		arr3[i]=arr2[j];
+		j++;
+		continue;	
+	}
+
+
+arr3[i]=arr1[i];
+}
+for(var i=0;i<10;i++)
+{
+	document.write(arr3[i]);
+}
+for(var i=0;i<10;i++)
+{
+for (var j=0;j<10;j++)
+{
+	if(arr3[j]<arr3[i])
+	{
+		temp=arr3[j];
+		arr3[j]=arr3[i];
+		arr3[i]=temp;
+	}
+}
+}	
+for(var i=0;i<10;i++)
+{
+	document.write(arr3[i]);
+}*/
+
+// multiplication of two array//
+/*var arr1=[1,2,3,6,8];
+var arr2=[4,7,5,10,9];
+var arr3 =[5];
+for(var i=0;i<10;i++)
+{
+	arr3[i]=arr1[i]*arr2[i]
+}
+for(var i=0;i<5;i++)
+{
+	document.write(arr3[i]);
+}*/
+
+
+
+var str=Priyanka;
+	var sl=str.length;
+	var c="";
+	for(var i=sl-1;i>=0;i--)
+	{
+		c+=str[i];
+		
+	}
+
+document.write(c);
+
+</script>
+
+
+  		
+</head>
+<body>
+
+</body>
+</html>

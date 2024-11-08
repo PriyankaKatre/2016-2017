@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p>Click the button to trigger a function that will output "Hello world" in a p element with id="demo"</p>
+	<button onmouseover ="muFunction(event)">Click me</button>
+	<p id ="demo">Hello javascript</p>
+	<script type="text/javascript">
+		function muFunction(event)
+		{	console.log(event);
+			document.getElementById("demo").innerHTML=
+			"Hello world";
+
+		}
+	</script>
+</body>
+</html>

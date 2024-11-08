@@ -1,0 +1,53 @@
+<html>
+	<head>
+
+	</head>
+	<body>
+	<table>
+		<tr>
+		<td>Add values</td>
+		</tr>
+		<tr>
+			<td><input type="text" id="stack1"></td>
+		</tr>
+		<tr>
+			<td><input type="text" id="stack2"></td>
+		</tr>
+		<tr>
+			<td><input type="text" id="stack3"></td>
+		</tr>
+		<tr>
+			<td><input type="text" id="stack4"></td>
+		</tr>
+		<tr>
+			<td><input type="text" id="stack5"></td>
+		</tr>
+		<tr>
+			<td>Enter Value</td>
+			<td><input type="text" id="inputValue"></td>
+		</tr>
+		<tr>
+			<td><input type="Button" value="Push" onclick="push();"></td>
+			<td><input type="Button" value="Pop" onclick="pop();"></td>
+		</tr>
+	</table>
+		<script>
+		var array1=[];
+		function push(){
+			if(array1.length<5)
+			{
+				array1[array1.length]=document.getElementById("inputValue").value;
+
+				document.getElementById("stack"+array1.length).value=array1[array1.length-1]
+
+			}
+			else {
+				array1.shift();
+					alert(array1.length)
+				}
+			}
+			</script>
+
+
+	</body>
+</html>

@@ -1,0 +1,5 @@
+cmd switch into another drive use drive name followed by colon 
+ex:- H: or D:
+
+for switch into folders
+cd folder name

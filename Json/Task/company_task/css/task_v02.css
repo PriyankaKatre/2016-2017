@@ -1,0 +1,125 @@
+.container-fluid {
+  background-color: #ccc;
+}
+.whole_app {
+  padding: 0px !important;
+  background-color: #fff;
+  border-radius: 50px 50px 0px 0px;
+}
+.whole_app .header {
+  background: #efefef;
+  padding: 10px;
+  padding-left: 80px;
+}
+.whole_app .header li {
+  font-size: 50px;
+}
+.whole_app .header li:first-child {
+  list-style-type: none;
+  font-size: 20px;
+}
+.whole_app .header li:nth-child(2) {
+  width: 10px;
+  color: red !important;
+}
+.whole_app .header li:nth-child(3) {
+  width: 10px;
+  color: yellow !important;
+}
+.whole_app .header li:last-child {
+  width: 10px;
+  color: green !important;
+}
+.whole_app p {
+  margin: 0;
+}
+.whole_app h2 {
+  margin-top: 0;
+}
+.whole_app .text_gray {
+  color: #9b9b9b;
+}
+.whole_app .main_content {
+  padding: 0px 30px;
+}
+.whole_app .main_content .left {
+  border-right: 2px dotted #d8d8d8;
+}
+.whole_app .main_content .left .company_personal .text_gray {
+  margin-top: 23px;
+  font-size: 14pt;
+}
+.whole_app .main_content .left .company_personal h2 {
+  margin-top: 13px;
+}
+.whole_app .main_content .left .company_personal .col-sm-6 {
+  padding: 0;
+  font-size: 14pt;
+}
+.whole_app .main_content .left .company_personal .col-sm-6:last-child {
+  padding-left: 30px;
+  border-left: 1px solid #d8d8d8;
+}
+.whole_app .main_content .left .company_personal .col-sm-6 .phone {
+  margin-top: 30px;
+}
+.whole_app .main_content .left .company_personal .col-sm-6 .ref {
+  margin-top: 15px;
+}
+.whole_app .main_content .left .company_personal .col-sm-6 .ref span {
+  color: #6699ff;
+  border-bottom: 1px solid;
+}
+.whole_app .main_content .left .company_personal .col-sm-6 .NP {
+  margin-top: 10px;
+}
+.whole_app .main_content .left .company_personal .col-sm-6 p:nth-child(2) {
+  margin-top: 15px;
+}
+.whole_app .main_content .left .company_personal .col-sm-6 p:last-child {
+  font-size: 13pt;
+}
+.whole_app .main_content .left .dealer_details {
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+  margin: 10px 0;
+  padding: 20px 0;
+  font-size: 14pt;
+}
+.whole_app .main_content .left .dealer_details .text_gray {
+  margin-top: 30px;
+}
+.whole_app .main_content .left .last_notes {
+  padding: 30px 0;
+  font-size: 14pt;
+}
+.whole_app .main_content .right {
+  font-size: 14pt;
+}
+.whole_app .main_content .right .text_gray {
+  margin-top: 23px;
+}
+.whole_app .main_content .right .buy_sell {
+  margin-top: 50px;
+}
+.whole_app .main_content .right .buy_sell p {
+  padding: 10px 0;
+}
+.whole_app .main_content .right .buy_sell .sell {
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+}
+.whole_app .main_content .right .buy_sell .dealer {
+  margin-top: 60px;
+}
+.whole_app .footer {
+  background-color: #efefef;
+  padding: 10px 30px;
+  border-radius: 0 0 5px 5px;
+}
+.whole_app .footer .btn {
+  font-size: 14pt;
+}
+.whole_app .footer .btn-success {
+  margin-right: 10px;
+}

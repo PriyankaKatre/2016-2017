@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<!--<script type="text/javascript">
+		Array.prototype.randarray=function()
+		{
+			var ra=Math.floor(Math.random()*this.length);
+			//var rs=this.splice(ra,1)
+			var rs=this[ra]
+			return rs;
+	
+		}
+
+
+
+var array1=["A","B","C","D","E","F","G"];
+array1.pop(array1.length-1);
+//var array2=["H","I","J","K","L","M","N"];
+//var result= 
+document.write(array1.randarray());
+document.write("</br>")
+document.write(array1);
+
+	</script>-->
+<script>
+function fixdarray(arr)
+{
+	var length=arr.length;
+
+	if (length>7)
+	{
+		arr.pop();
+	}
+
+}
+var arr1=["I","A","B","C","D","E","F","G"];
+
+fixdarray(arr1);
+
+document.write("</br>")
+document.write(arr1)
+
+</script>
+
+</head>
+<body>
+
+</body>
+</html>
